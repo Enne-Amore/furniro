@@ -1,3 +1,15 @@
 .container {
-    @apply bg-white text-black
+    @apply bg-white text-black flex justify-between p-2
+}
+
+.logo {
+    @apply flex items-center gap-1
+}
+
+.textLogo {
+    @apply text-4xl font-bold font-montserrat
+}
+
+.navBar ul {
+    @apply flex gap-10
 }
