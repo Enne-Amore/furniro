@@ -1,8 +1,8 @@
-import 'Header.module.css';
+import './Header.module.css';
 
 export const Header = () => {
   return (
-    <div>
+    <div className='container'>
       Header
     </div>
   )

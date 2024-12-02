@@ -1,8 +1,8 @@
-import 'Footer.module.css';
+import './Footer.module.css';
 
 export const Footer = () => {
   return (
-    <div>
+    <div className='container'>
       Footer
     </div>
   )
