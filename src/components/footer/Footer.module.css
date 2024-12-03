@@ -1,3 +1,64 @@
 .container {
-    @apply bg-white text-black
+    @apply bg-white text-black pt-12 pb-8 px-16 font-poppins flex flex-col gap-9 border-t-2 border-t-[#D9D9D9]
+}
+
+.lists {
+    @apply flex gap-40 ml-1 mb-3
+}
+
+.infoAdd {
+    @apply flex flex-col gap-12
+}
+
+.primaryTitle {
+    @apply font-bold text-2xl
+}
+
+.paragraph {
+    @apply font-normal text-base text-[#9F9F9F] w-72
+}
+
+.socialMedia {
+    @apply flex items-center gap-4
+}
+
+.socialMedia a {
+    @apply rounded-full shadow-black shadow-2xl p-2
+}
+
+.links,
+.help,
+.newsletter {
+    @apply flex flex-col gap-14
+}
+
+.secundaryTitle {
+    @apply font-medium text-base text-[#9F9F9F]
+}
+
+.linksList {
+    @apply flex flex-col gap-11
+}
+
+.link {
+    @apply font-medium text-base
+}
+
+.form {
+    @apply flex gap-3
+}
+
+.form input {
+    @apply text-[#9F9F9F] text-sm border-b-black border-b-2 w-48
+}
+
+.form button {
+    @apply font-medium text-sm uppercase border-b-black border-b-2
+}
+
+hr {
+    @apply text-[#D9D9D9]
+}
+.details {
+    @apply font-normal text-base ml-1
 }
