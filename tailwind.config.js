@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'poppins': ["Poppins", "sans-serif"],
         'montserrat': ["Montserrat", "sans-serif"],
+      },
+      backgroundImage: {
+        'main-background': 'url("/src/assets/main-background.png")'
       }
     },
   },

@@ -1,4 +1,9 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa6";
 import styles from "./Footer.module.css";
 
 export const InfoAdd = () => {
@@ -20,6 +25,7 @@ export const InfoAdd = () => {
         >
           <FaFacebookF />
         </a>
+        
         <a
           href="https://www.instagram.com"
           target="_blank"
@@ -27,6 +33,7 @@ export const InfoAdd = () => {
         >
           <FaInstagram />
         </a>
+        
         <a
           href="https://x.com/?lang=pt-br"
           target="_blank"
@@ -34,6 +41,7 @@ export const InfoAdd = () => {
         >
           <FaTwitter />
         </a>
+        
         <a
           href="https://www.linkedin.com"
           target="_blank"
