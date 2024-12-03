@@ -1,4 +1,4 @@
-.containerIntro {
+.introContainer {
     @apply bg-main-background bg-cover bg-center pt-36 pb-24 px-12 flex justify-end
 }
 

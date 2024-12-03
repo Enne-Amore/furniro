@@ -3,7 +3,7 @@ import styles from "./Intro.module.css";
 
 export const Intro = () => {
   return (
-    <section className={styles.containerIntro}>
+    <section className={styles.introContainer}>
       <article className={styles.intro}>
         <span className={styles.detail}>New Arrival</span>
 
