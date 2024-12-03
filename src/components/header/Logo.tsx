@@ -6,7 +6,7 @@ export const Logo = () => {
     <figure className={styles.logo}>
       <img src={logo} alt="Furniro logo" />
 
-      <figcaption className={styles.textLogo}>Furniro</figcaption>
+      <h1 className={styles.textLogo}>Furniro</h1>
     </figure>
   );
 };
