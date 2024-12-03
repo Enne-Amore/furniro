@@ -12,7 +12,7 @@ const Range = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </span>
 
-      <ul className={styles.imgList}>
+      <ul className={styles.comfortableList}>
         <figure className={styles.comfortable}>
           <img
             src={diningImg}
