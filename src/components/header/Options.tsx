@@ -1,10 +1,16 @@
+import { Link } from "react-router-dom"
+import styles from './Header.module.css';
 
 export const Options = () => {
   return (
-    <div>
-      <span className={"material-symbols-outlined"}>person_alert</span>
+    <div className={styles.options}>
+      <Link to={'/login'}>
+        <span className={"material-symbols-outlined"}>person_alert</span>
+      </Link>
 
-      <span className={"material-symbols-outlined"}>shopping_cart</span>
+      <Link to={'/carrinho'}>
+        <span className={"material-symbols-outlined"}>shopping_cart</span>
+      </Link>
     </div>
   )
 }

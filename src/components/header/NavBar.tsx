@@ -5,13 +5,13 @@ export const NavBar = () => {
   return (
     <nav className={styles.navBar}>
       <ul>
-        <Link to={'/'}>Home</Link>
+        <Link to={'/'} className={styles.link}>Home</Link>
 
-        <Link to={'/shop'}>Shop</Link>
+        <Link to={'/shop'} className={styles.link}>Shop</Link>
 
-        <Link to={'/about'}>About</Link>
+        <Link to={'/about'} className={styles.link}>About</Link>
 
-        <Link to={'/contact'}>Contact</Link>
+        <Link to={'/contact'} className={styles.link}>Contact</Link>
       </ul>
     </nav>
   )
