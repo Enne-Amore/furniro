@@ -71,6 +71,8 @@ export const Products = () => {
             </div>
         </article>
       </ul>
+
+      <button type='button' className={styles.btn}>Show More</button>
     </section>
   )
 }
