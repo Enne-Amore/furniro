@@ -11,6 +11,10 @@ module.exports = {
       },
       backgroundImage: {
         'main-background': 'url("/src/assets/main-background.png")'
+      },
+      height: {
+        '582': '582px',
+        '486': '486px'
       }
     },
   },

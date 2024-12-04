@@ -18,49 +18,51 @@ export const RoomsInspiration = () => {
         </Link>
       </div>
 
-      <ul className={styles.roomsList}>
-        <article className={styles.room}>
-          <figure className={styles.roomImg}>
-            <img src={roomImg} alt="Room inspiration" />
-          </figure>
+      <div className={styles.roomsListContainer}>
+        <ul className={styles.roomsList}>
+          <article className={styles.room}>
+            <figure className={styles.firstRoomImg}>
+              <img src={roomImg} alt="Room inspiration" />
+            </figure>
 
-          <div className={styles.infoContainer}>
-            <div className={styles.infoRoom}>
-              <span className={styles.nameRoom}>01 - Bed Room</span>
+            <div className={styles.infoContainer}>
+              <div className={styles.infoRoom}>
+                <span className={styles.nameRoom}>01 - Bed Room</span>
 
-              <h2 className={styles.titleRoom}>Inner Peace</h2>
+                <h2 className={styles.titleRoom}>Inner Peace</h2>
+              </div>
+
+              <button type="button" className={styles.nextBtn}>
+                <span className="material-symbols-outlined">east</span>
+              </button>
             </div>
+          </article>
 
-            <button type="button" className={styles.nextBtn}>
-              <span className="material-symbols-outlined">east</span>
-            </button>
-          </div>
-        </article>
+          <article className={styles.room}>
+            <figure className={styles.roomImg}>
+              <img src={roomImg} alt="Next room" />
+            </figure>
 
-        <article className={styles.room}>
+            <div className={styles.btnList}>
+              <button type="button" className={`${styles.btn} ${styles.activeBtn}`}></button>
+
+              <button type="button" className={styles.btn}></button>
+
+              <button type="button" className={styles.btn}></button>
+
+              <button type="button" className={styles.btn}></button>
+            </div>
+          </article>
+
           <figure className={styles.roomImg}>
             <img src={roomImg} alt="Next room" />
           </figure>
 
-          <div className={styles.btnList}>
-            <button type="button" className={styles.btn}></button>
-
-            <button type="button" className={styles.btn}></button>
-
-            <button type="button" className={styles.btn}></button>
-
-            <button type="button" className={styles.btn}></button>
-          </div>
-        </article>
-
-        <figure className={styles.roomImg}>
-          <img src={roomImg} alt="Next room" />
-        </figure>
-
-        <figure className={styles.roomImg}>
-          <img src={roomImg} alt="Next room" />
-        </figure>
-      </ul>
+          <figure className={styles.roomImg}>
+            <img src={roomImg} alt="Next room" />
+          </figure>
+        </ul>
+      </div>
     </section>
   );
 };
