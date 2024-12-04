@@ -1,5 +1,6 @@
 import { Advantages } from '../../components/advantages/Advantages'
 import { WherePage } from '../../components/wherePage/WherePage'
+import { AllTables } from './components/AllTables'
 import styles from './Main.module.css'
 
 export const Main = () => {
@@ -7,7 +8,7 @@ export const Main = () => {
     <main className={styles.container}>
       <WherePage namePage={'Cart'} />
 
-
+      <AllTables />
 
       <Advantages />
     </main>
