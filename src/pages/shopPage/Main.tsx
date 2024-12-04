@@ -1,6 +1,6 @@
 import { WherePage } from '../../components/wherePage/WherePage'
-import { Advantages } from './components/Advantages'
 import { Catalog } from './components/Catalog'
+import { Advantages } from '../../components/advantages/Advantages'
 import styles from './Main.module.css'
 
 export const Main = () => {
