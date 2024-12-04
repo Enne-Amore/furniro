@@ -45,11 +45,19 @@
 }
 
 .form {
-    @apply flex gap-3
+    @apply flex items-start gap-3
 }
 
-.form input {
-    @apply text-[#9F9F9F] text-sm border-b-black border-b-2 w-48
+.form .input {
+    @apply flex flex-col gap-1 w-48
+}
+
+.form .input input {
+    @apply text-[#9F9F9F] text-sm border-b-black border-b-2
+}
+
+.form .input .errors {
+    @apply text-sm text-red-500 italic leading-4
 }
 
 .form button {

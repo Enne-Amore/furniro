@@ -1,13 +1,12 @@
 import { Footer } from "../../components/footer/Footer"
 import { Header } from "../../components/header/Header"
-import { Main } from "./components/Main"
 
-export const HomePage = () => {
+export const ContactPage = () => {
   return (
     <div>
       <Header />
 
-      <Main />
+      Contact
 
       <Footer />
     </div>

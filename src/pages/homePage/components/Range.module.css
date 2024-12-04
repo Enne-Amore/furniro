@@ -1,0 +1,27 @@
+.rangeContainer {
+    @apply text-[#333333] text-center flex flex-col justify-center gap-2 py-16
+}
+
+.title {
+    @apply text-3xl font-bold
+}
+
+.legendTitle {
+    @apply text-[#666666] text-xl font-normal mb-16
+}
+
+.comfortableList {
+    @apply flex justify-center gap-5
+}
+
+.comfortable {
+    @apply flex flex-col items-center gap-7
+}
+
+.img {
+    @apply max-w-96 h-auto
+}
+
+.legendImg {
+    @apply text-2xl font-semibold
+}
