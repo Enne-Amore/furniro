@@ -19,7 +19,7 @@
 }
 
 .img {
-    @apply w-full h-full
+    @apply max-w-96 h-auto
 }
 
 .legendImg {

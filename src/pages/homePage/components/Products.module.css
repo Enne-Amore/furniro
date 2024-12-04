@@ -18,6 +18,10 @@
     @apply absolute top-5 right-5 bg-[#E97171] text-white rounded-full py-3 px-1
 }
 
+.productImg {
+    @apply max-w-72 h-auto
+}
+
 .info {
     @apply pt-4 pb-8 px-4 flex flex-col gap-2
 }
