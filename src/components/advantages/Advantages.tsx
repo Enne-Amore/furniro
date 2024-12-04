@@ -1,13 +1,13 @@
-import thopyIcon from '../icons/trophy.svg';
-import guaranteeIcon from '../icons/guarantee.svg';
-import shippingIcon from '../icons/shipping.svg';
-import customerSupportIcon from '../icons/customer-support.svg';
+import thopyIcon from './icons/trophy.svg';
+import guaranteeIcon from './icons/guarantee.svg';
+import shippingIcon from './icons/shipping.svg';
+import customerSupportIcon from './icons/customer-support.svg';
 import styles from './Advantages.module.css'
 
 export const Advantages = () => {
   return (
     <ul className={styles.advantagesList}>
-      <article className={styles.advantagesList}>
+      <article className={styles.advantage}>
         <span className={styles.icon}>
           <img src={thopyIcon} alt="Thopy icon" />
         </span>
@@ -19,7 +19,7 @@ export const Advantages = () => {
         </div>
       </article>
       
-      <article className={styles.advantagesList}>
+      <article className={styles.advantage}>
         <span className={styles.icon}>
           <img src={guaranteeIcon} alt="Guarantee icon" />
         </span>
@@ -31,7 +31,7 @@ export const Advantages = () => {
         </div>
       </article>
       
-      <article className={styles.advantagesList}>
+      <article className={styles.advantage}>
         <span className={styles.icon}>
           <img src={shippingIcon} alt="Shipping icon" />
         </span>
@@ -43,7 +43,7 @@ export const Advantages = () => {
         </div>
       </article>
       
-      <article className={styles.advantagesList}>
+      <article className={styles.advantage}>
         <span className={styles.icon}>
           <img src={customerSupportIcon} alt="Customer support icon" />
         </span>
