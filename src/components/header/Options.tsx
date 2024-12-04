@@ -8,7 +8,7 @@ export const Options = () => {
         <span className={"material-symbols-outlined"}>person_alert</span>
       </Link>
 
-      <Link to={'/carrinho'}>
+      <Link to={'/cart'}>
         <span className={"material-symbols-outlined"}>shopping_cart</span>
       </Link>
     </div>
