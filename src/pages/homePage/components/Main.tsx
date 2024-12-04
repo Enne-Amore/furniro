@@ -1,3 +1,4 @@
+import { Furniture } from "./Furniture";
 import { Intro } from "./Intro";
 import styles from "./Main.module.css";
 import { Products } from "./Products";
@@ -14,6 +15,8 @@ export const Main = () => {
       <Products />
 
       <RoomsInspiration />
+
+      <Furniture />
     </main>
   );
 };
