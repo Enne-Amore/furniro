@@ -1,0 +1,19 @@
+.advantagesList {
+    @apply bg-[#F9F1E7] flex justify-between items-center py-28 px-14
+}
+
+.advantage {
+    @apply flex gap-2
+}
+
+.texts {
+    @apply flex flex-col gap-0.5
+}
+
+.title {
+    @apply text-[#242424] text-2xl font-semibold
+}
+
+.legend {
+    @apply text-[#898989] text-xl font-medium
+}

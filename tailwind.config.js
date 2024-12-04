@@ -16,6 +16,9 @@ module.exports = {
       height: {
         '582': '582px',
         '486': '486px'
+      },
+      gap: {
+        '0.5': '2px'
       }
     },
   },
