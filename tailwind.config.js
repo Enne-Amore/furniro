@@ -10,7 +10,8 @@ module.exports = {
         'montserrat': ["Montserrat", "sans-serif"],
       },
       backgroundImage: {
-        'main-background': 'url("/src/assets/main-background.png")'
+        'main-background': 'url("/src/assets/main-background.png")',
+        'where-page-background': 'url("/src/assets/secundary-page-background.png")',
       },
       height: {
         '582': '582px',
