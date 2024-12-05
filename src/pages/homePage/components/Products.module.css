@@ -15,7 +15,7 @@
 }
 
 .detail {
-    @apply absolute top-5 right-5 bg-[#E97171] text-white rounded-full py-3 px-1
+    @apply absolute top-5 right-5 bg-[#E97171] text-white rounded-full py-2 px-1
 }
 
 .productImg {

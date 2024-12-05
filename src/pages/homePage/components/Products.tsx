@@ -1,174 +1,57 @@
-import img from '../../../assets/syltherine-item.png'
-import styles from './Products.module.css';
+import { useEffect, useState } from "react";
+import styles from "./Products.module.css";
+import { Product } from "../../../types/Product";
+import { productFetch } from "../../../api/config";
 
 export const Products = () => {
+  const [products, setProducts] = useState<Product[]>([]);
+
+  const getProducts = async () => {
+    try {
+      const response = await productFetch.get("/products");
+      const data: Product[] = response.data;
+      setProducts(data);
+    } catch (error) {
+      console.log(`Error: ${error}`);
+    }
+  };
+
+  useEffect(() => {
+    getProducts();
+  }, [products]);
+
   return (
     <section className={styles.productsContainer}>
       <h1 className={styles.title}>Our Products</h1>
 
       <ul className={styles.productsList}>
-        <article className={styles.product}>
-            <span className={styles.detail}>-30%</span>
+        {products &&
+          products.map((product) => (
+            <article className={styles.product}>
+              {product.discount && <span className={styles.detail}>{product.discount}%</span>}
 
-            <figure className={styles.productImg}>
-                <img src={img} alt="product" />
-            </figure>
+              <figure className={styles.productImg}>
+                <img src={require(`../../../assets/${product.img.split('/').pop()}`)} alt={product.altImg} />
+              </figure>
 
-            <div className={styles.info}>
-              <h2 className={styles.name}>Syltherine</h2>
+              <div className={styles.info}>
+                <h2 className={styles.name}>{product.name}</h2>
 
-              <h3 className={styles.legend}>Stylish cafe chair</h3>
+                <h3 className={styles.legend}>{product.legend}</h3>
 
-              <div className={styles.priceContainer}>
-                <span className={styles.currentPrice}>Rp 2.500.000</span>
+                <div className={styles.priceContainer}>
+                  <span className={styles.currentPrice}>{product.currentPrice}</span>
 
-                <span className={styles.oldPrice}>Rp 3.500.000</span>
+                  {product.oldPrice && <span className={styles.oldPrice}>{product.oldPrice}</span>}
+                </div>
               </div>
-            </div>
-        </article>
-        
-        <article className={styles.product}>
-            <span className={styles.detail}>-30%</span>
-
-            <figure className={styles.productImg}>
-                <img src={img} alt="product" />
-            </figure>
-
-            <div className={styles.info}>
-              <h2 className={styles.name}>Syltherine</h2>
-
-              <h3 className={styles.legend}>Stylish cafe chair</h3>
-
-              <div className={styles.priceContainer}>
-                <span className={styles.currentPrice}>Rp 2.500.000</span>
-
-                <span className={styles.oldPrice}>Rp 3.500.000</span>
-              </div>
-            </div>
-        </article>
-        
-        <article className={styles.product}>
-            <span className={styles.detail}>-30%</span>
-
-            <figure className={styles.productImg}>
-                <img src={img} alt="product" />
-            </figure>
-
-            <div className={styles.info}>
-              <h2 className={styles.name}>Syltherine</h2>
-
-              <h3 className={styles.legend}>Stylish cafe chair</h3>
-
-              <div className={styles.priceContainer}>
-                <span className={styles.currentPrice}>Rp 2.500.000</span>
-
-                <span className={styles.oldPrice}>Rp 3.500.000</span>
-              </div>
-            </div>
-        </article>
-        
-        <article className={styles.product}>
-            <span className={styles.detail}>-30%</span>
-
-            <figure className={styles.productImg}>
-                <img src={img} alt="product" />
-            </figure>
-
-            <div className={styles.info}>
-              <h2 className={styles.name}>Syltherine</h2>
-
-              <h3 className={styles.legend}>Stylish cafe chair</h3>
-
-              <div className={styles.priceContainer}>
-                <span className={styles.currentPrice}>Rp 2.500.000</span>
-
-                <span className={styles.oldPrice}>Rp 3.500.000</span>
-              </div>
-            </div>
-        </article>
-        
-        <article className={styles.product}>
-            <span className={styles.detail}>-30%</span>
-
-            <figure className={styles.productImg}>
-                <img src={img} alt="product" />
-            </figure>
-
-            <div className={styles.info}>
-              <h2 className={styles.name}>Syltherine</h2>
-
-              <h3 className={styles.legend}>Stylish cafe chair</h3>
-
-              <div className={styles.priceContainer}>
-                <span className={styles.currentPrice}>Rp 2.500.000</span>
-
-                <span className={styles.oldPrice}>Rp 3.500.000</span>
-              </div>
-            </div>
-        </article>
-        
-        <article className={styles.product}>
-            <span className={styles.detail}>-30%</span>
-
-            <figure className={styles.productImg}>
-                <img src={img} alt="product" />
-            </figure>
-
-            <div className={styles.info}>
-              <h2 className={styles.name}>Syltherine</h2>
-
-              <h3 className={styles.legend}>Stylish cafe chair</h3>
-
-              <div className={styles.priceContainer}>
-                <span className={styles.currentPrice}>Rp 2.500.000</span>
-
-                <span className={styles.oldPrice}>Rp 3.500.000</span>
-              </div>
-            </div>
-        </article>
-        
-        <article className={styles.product}>
-            <span className={styles.detail}>-30%</span>
-
-            <figure className={styles.productImg}>
-                <img src={img} alt="product" />
-            </figure>
-
-            <div className={styles.info}>
-              <h2 className={styles.name}>Syltherine</h2>
-
-              <h3 className={styles.legend}>Stylish cafe chair</h3>
-
-              <div className={styles.priceContainer}>
-                <span className={styles.currentPrice}>Rp 2.500.000</span>
-
-                <span className={styles.oldPrice}>Rp 3.500.000</span>
-              </div>
-            </div>
-        </article>
-        
-        <article className={styles.product}>
-            <span className={styles.detail}>-30%</span>
-
-            <figure className={styles.productImg}>
-                <img src={img} alt="product" />
-            </figure>
-
-            <div className={styles.info}>
-              <h2 className={styles.name}>Syltherine</h2>
-
-              <h3 className={styles.legend}>Stylish cafe chair</h3>
-
-              <div className={styles.priceContainer}>
-                <span className={styles.currentPrice}>Rp 2.500.000</span>
-
-                <span className={styles.oldPrice}>Rp 3.500.000</span>
-              </div>
-            </div>
-        </article>
+            </article>
+          ))}
       </ul>
 
-      <button type='button' className={styles.btn}>Show More</button>
+      <button type="button" className={styles.btn}>
+        Show More
+      </button>
     </section>
-  )
-}
+  );
+};
