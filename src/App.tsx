@@ -5,6 +5,7 @@ import { ContactPage } from "./pages/contactPage/ContactPage";
 import { CartPage } from "./pages/cartPage/CartPage";
 import { CheckoutPage } from "./pages/checkoutPage/CheckoutPage";
 import { LoginPage } from "./pages/loginPage/LoginPage";
+import { SingleProductPage } from "./pages/singleProductPage/SingleProductPage";
 
 export function App() {
   return (
@@ -20,6 +21,8 @@ export function App() {
       <Route path="/checkout" element={<CheckoutPage />} />
 
       <Route path="/login" element={<LoginPage />} />
+
+      <Route path="/product:id" element={<SingleProductPage />} />
     </Routes>
   );
 }
