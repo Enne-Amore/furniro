@@ -2,7 +2,7 @@ import styles from './Inputs.module.css'
 
 export const Inputs = () => {
   return (
-    <form className={styles.container}>
+    <div className={styles.container}>
       <div className={styles.twoInputsContainer}>
         <div className={styles.inputContainer}>
           <label htmlFor="firstName" className={styles.label}>First name</label>
@@ -70,6 +70,6 @@ export const Inputs = () => {
       </div>
 
       <button type="submit" className={styles.btn}>Submit</button>
-    </form>
+    </div>
   )
 }

@@ -7,11 +7,11 @@ export const GeneralForm = () => {
     <section className={styles.container}>
       <h1 className={styles.title}>Billing details</h1>
 
-      <div className={styles.generalFormContainer}>
+      <form className={styles.generalFormContainer}>
         <Inputs />
 
         <PurchaseDetails />
-      </div>
+      </form>
     </section>
   )
 }
