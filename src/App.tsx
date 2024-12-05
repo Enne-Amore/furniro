@@ -3,6 +3,7 @@ import { HomePage } from "./pages/homePage/HomePage";
 import { ShopPage } from "./pages/shopPage/ShopPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
 import { CartPage } from "./pages/cartPage/CartPage";
+import { CheckoutPage } from "./pages/checkoutPage/CheckoutPage";
 
 export function App() {
   return (
@@ -14,6 +15,8 @@ export function App() {
       <Route path="/contact" element={<ContactPage />} />
       
       <Route path="/cart" element={<CartPage />} />
+
+      <Route path="/checkout" element={<CheckoutPage />} />
     </Routes>
   );
 }
