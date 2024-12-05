@@ -1,5 +1,5 @@
-import styles from './Products.module.css';
 import img from '../../../assets/syltherine-item.png'
+import styles from './Products.module.css';
 
 export const Products = () => {
   return (
