@@ -4,6 +4,7 @@ import { ShopPage } from "./pages/shopPage/ShopPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
 import { CartPage } from "./pages/cartPage/CartPage";
 import { CheckoutPage } from "./pages/checkoutPage/CheckoutPage";
+import { LoginPage } from "./pages/loginPage/LoginPage";
 
 export function App() {
   return (
@@ -17,6 +18,8 @@ export function App() {
       <Route path="/cart" element={<CartPage />} />
 
       <Route path="/checkout" element={<CheckoutPage />} />
+
+      <Route path="/login" element={<LoginPage />} />
     </Routes>
   );
 }
