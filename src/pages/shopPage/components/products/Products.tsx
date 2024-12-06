@@ -4,7 +4,7 @@ import styles from './Products.module.css'
 
 export const Products = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <ul className={styles.productsList}>
         <article className={styles.product}>
             <span className={styles.detail}>-30%</span>
@@ -168,11 +168,11 @@ export const Products = () => {
       </ul>
 
       <div className={styles.btnList}>
-        <Link to={'/shop/1'} className={styles.numBtn}>1</Link>
+        <Link to={'/shop/1'} className={`${styles.numBtn} ${styles.activeBtn}`}>1</Link>
         
-        <Link to={'/shop/2'} className={styles.numBtn}>2</Link>
+        <Link to={'/shop/2'} className={`${styles.numBtn}`}>2</Link>
         
-        <Link to={'/shop/3'} className={styles.numBtn}>3</Link>
+        <Link to={'/shop/3'} className={`${styles.numBtn}`}>3</Link>
         
         <button type="button" className={styles.nextBtn}>Next</button>
       </div>

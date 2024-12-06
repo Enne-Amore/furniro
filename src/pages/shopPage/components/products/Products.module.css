@@ -1,13 +1,9 @@
-.productsContainer {
-    @apply flex flex-col gap-8 pb-16 justify-center items-center
-}
-
-.title {
-    @apply text-4xl text-[#3A3A3A] text-center font-bold
+.container {
+    @apply flex flex-col gap-10 justify-center items-center my-14
 }
 
 .productsList {
-    @apply flex flex-wrap justify-center gap-8
+    @apply flex flex-wrap justify-center gap-10
 }
 
 .product {
@@ -46,6 +42,18 @@
     @apply text-[#B0B0B0] text-base font-normal line-through
 }
 
-.btn {
-    @apply text-base text-[#B88E2F] font-semibold border-[#B88E2F] border-2 w-max py-3 px-20
+.btnList {
+    @apply flex items-center gap-9
+}
+
+.numBtn {
+    @apply bg-[#F9F1E7] text-xl font-normal py-3 px-6 rounded-lg
+}
+
+.activeBtn {
+    @apply bg-[#B88E2F] text-white
+}
+
+.nextBtn {
+    @apply bg-[#F9F1E7] text-xl font-light py-3 px-6 rounded-lg
 }
