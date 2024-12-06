@@ -4,6 +4,7 @@ import { Product } from "../../../types/Product";
 import { productFetch } from "../../../api/config";
 
 export const Products = () => {
+  const [show, setShow] = useState<number>(8)
   const [products, setProducts] = useState<Product[]>([]);
 
   const getProducts = async () => {
@@ -20,12 +21,16 @@ export const Products = () => {
     getProducts();
   }, [products]);
 
+  const showMore = () => {
+    setShow(12)
+  }
+
   return (
     <section className={styles.productsContainer}>
       <h1 className={styles.title}>Our Products</h1>
 
       <ul className={styles.productsList}>
-        {products.slice(0, 8).map((product) => (
+        {products.slice(0, show).map((product) => (
             <article key={product.id} className={styles.product}>
               {product.discount && <span className={styles.detail}>{product.discount}%</span>}
 
@@ -48,9 +53,11 @@ export const Products = () => {
           ))}
       </ul>
 
-      <button type="button" className={styles.btn}>
-        Show More
-      </button>
+      {show === 8 && (
+        <button type="button" onClick={showMore} className={styles.btn}>
+          Show More
+        </button>
+      )}
     </section>
   );
 };
