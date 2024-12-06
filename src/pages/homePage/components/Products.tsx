@@ -25,9 +25,8 @@ export const Products = () => {
       <h1 className={styles.title}>Our Products</h1>
 
       <ul className={styles.productsList}>
-        {products &&
-          products.map((product) => (
-            <article className={styles.product}>
+        {products.slice(0, 8).map((product) => (
+            <article key={product.id} className={styles.product}>
               {product.discount && <span className={styles.detail}>{product.discount}%</span>}
 
               <figure className={styles.productImg}>
