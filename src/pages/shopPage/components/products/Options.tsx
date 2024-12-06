@@ -35,7 +35,7 @@ export const Options = ({ show, setShow }: ViewList) => {
           </figure>
         </button>
 
-        <span className={styles.infoAdd}>Showing 1–16 of 32 results</span>
+        <span className={styles.infoAdd}>Showing 1–{show} of 32 results</span>
       </div>
 
       <div className={styles.side}>

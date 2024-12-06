@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import { Product } from "../../../../types/Product";
 import { productFetch } from "../../../../api/config";
 import { ViewList } from "../../types/ViewList";
+import shareIcon from '../../icons/share.svg';
+import compareIcon from '../../icons/compare.svg';
+import heartIcon from '../../icons/heart.svg';
 import styles from "./Products.module.css";
 
 export const Products = ({ show }: ViewList) => {
@@ -39,6 +42,38 @@ export const Products = ({ show }: ViewList) => {
                 alt={product.altImg}
               />
             </figure>
+
+            <div className={styles.overlay}>
+              <button type="button" className={styles.addToCart}>
+                Add to cart
+              </button>
+
+              <div className={styles.options}>
+                <button type="button" className={styles.op}>
+                  <figure>
+                    <img src={shareIcon} alt="Share icon" />
+                  </figure>
+
+                  <span className={styles.label}>Share</span>
+                </button>
+
+                <button type="button" className={styles.op}>
+                  <figure>
+                    <img src={compareIcon} alt="Compare icon" />
+                  </figure>
+
+                  <span className={styles.label}>Compare</span>
+                </button>
+
+                <button type="button" className={styles.op}>
+                  <figure>
+                    <img src={heartIcon} alt="Heart icon" />
+                  </figure>
+
+                  <span className={styles.label}>Like</span>
+                </button>
+              </div>
+            </div>
 
             <div className={styles.info}>
               <h2 className={styles.name}>{product.name}</h2>

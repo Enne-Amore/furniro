@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
-import styles from "./Products.module.css";
 import { Product } from "../../../types/Product";
 import { productFetch } from "../../../api/config";
+import shareIcon from '../icons/share.svg';
+import compareIcon from '../icons/compare.svg';
+import heartIcon from '../icons/heart.svg';
+import styles from "./Products.module.css";
 
 export const Products = () => {
   const [show, setShow] = useState<number>(8)
@@ -37,6 +40,38 @@ export const Products = () => {
               <figure className={styles.productImg}>
                 <img src={require(`../../../assets/${product.img.split('/').pop()}`)} alt={product.altImg} />
               </figure>
+
+              <div className={styles.overlay}>
+                <button type="button" className={styles.addToCart}>
+                  Add to cart
+                </button>
+
+                <div className={styles.options}>
+                  <button type="button" className={styles.op}>
+                    <figure>
+                      <img src={shareIcon} alt="Share icon" />
+                    </figure>
+
+                    <span className={styles.label}>Share</span>
+                  </button>
+
+                  <button type="button" className={styles.op}>
+                    <figure>
+                      <img src={compareIcon} alt="Compare icon" />
+                    </figure>
+
+                    <span className={styles.label}>Compare</span>
+                  </button>
+
+                  <button type="button" className={styles.op}>
+                    <figure>
+                      <img src={heartIcon} alt="Heart icon" />
+                    </figure>
+
+                    <span className={styles.label}>Like</span>
+                  </button>
+                </div>
+              </div>
 
               <div className={styles.info}>
                 <h2 className={styles.name}>{product.name}</h2>
