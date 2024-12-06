@@ -1,3 +1,7 @@
-.container {
-    @apply bg-[#fff]
+.title {
+    @apply text-4xl text-center font-semibold mb-2
+}
+
+.paragraph {
+    @apply text-[#9F9F9F] text-base text-center font-normal w-644
 }
