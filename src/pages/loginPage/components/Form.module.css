@@ -18,8 +18,16 @@
     @apply text-base font-medium
 }
 
+.withErrorsContainer {
+    @apply flex flex-col gap-1
+}
+
 .input {
     @apply text-base text-[#9F9F9F] font-normal rounded-lg py-3 px-5 border border-[#9F9F9F]
+}
+
+.errors {
+    @apply text-sm text-red-500 italic leading-4
 }
 
 .btn {
