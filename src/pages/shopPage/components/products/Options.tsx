@@ -2,8 +2,16 @@ import filterIcon from '../../icons/system-filtering.svg';
 import viewListIcon from '../../icons/view-list.svg';
 import gridListIcon from '../../icons/grid-big-round.svg';
 import styles from './Options.module.css'
+import { ViewList } from '../../types/ViewList';
 
-export const Options = () => {
+export const Options = ({ show, setShow }: ViewList) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = parseInt(e.target.value, 10);
+    if (!isNaN(value)) {
+      setShow(value);
+    }
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.side}>
@@ -34,7 +42,7 @@ export const Options = () => {
         <div className={styles.optionContainer}>
           <span className={styles.label}>Show</span>
 
-          <input type="number" id="show" defaultValue={16} min={4} max={16} className={styles.input} />
+          <input type="number" id="show" value={show} onChange={handleChange} min={4} max={16} className={styles.input} />
         </div>
 
         <div className={styles.optionContainer}>
