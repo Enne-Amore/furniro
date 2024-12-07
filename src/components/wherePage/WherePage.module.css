@@ -7,7 +7,11 @@
 }
 
 .way {
-    @apply text-base
+    @apply text-base flex items-center gap-1
+}
+
+.strong {
+    @apply flex items-center gap-1
 }
 
 .way strong {
