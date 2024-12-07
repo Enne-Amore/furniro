@@ -21,7 +21,7 @@ export const InfoProduct = () => {
         Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
       </p>
 
-      <div>
+      <div className={styles.inputsContainer}>
         <div className={styles.inputContainer}>
           <label className={styles.labelInput}>Size</label>
 
