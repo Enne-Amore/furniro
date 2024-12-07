@@ -1,0 +1,15 @@
+.container {
+    @apply flex gap-8
+}
+
+.imgList {
+    @apply flex flex-col gap-8
+}
+
+.thumbnailImg {
+    @apply w-72px h-auto rounded-lg
+}
+
+.imgSelected {
+    @apply w-423 h-auto
+}
