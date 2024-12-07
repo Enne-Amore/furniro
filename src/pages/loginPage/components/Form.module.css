@@ -1,0 +1,35 @@
+.container {
+    @apply flex flex-col justify-center items-center gap-10 my-14
+}
+
+.title {
+    @apply text-4xl text-[#3A3A3A] text-center font-bold
+}
+
+.formContainer {
+    @apply flex flex-col items-center gap-9 w-1/4
+}
+
+.inputContainer {
+    @apply flex flex-col gap-5 w-full
+}
+
+.label {
+    @apply text-base font-medium
+}
+
+.withErrorsContainer {
+    @apply flex flex-col gap-1
+}
+
+.input {
+    @apply text-base text-[#9F9F9F] font-normal rounded-lg py-3 px-5 border border-[#9F9F9F]
+}
+
+.errors {
+    @apply text-sm text-red-500 italic leading-4
+}
+
+.btn {
+    @apply bg-[#B88E2F] text-white text-base font-normal py-3 px-20 w-max mt-4 rounded-md
+}

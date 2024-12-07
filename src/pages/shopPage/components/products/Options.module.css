@@ -1,0 +1,24 @@
+.container {
+    @apply bg-[#F9F1E7] flex justify-between items-center py-5 px-20
+}
+
+.side {
+    @apply flex items-center gap-5
+}
+
+.optionContainer {
+    @apply flex items-center gap-2
+}
+
+.infoAdd {
+    @apply border-l-2 border-[#9F9F9F] pl-5
+}
+
+.input {
+    @apply w-14 text-[#9F9F9F] text-xl font-normal text-center py-3 pl-3
+}
+
+
+.select {
+    @apply w-44 text-[#9F9F9F] text-xl font-normal py-3 pl-6 border-white border
+}

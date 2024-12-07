@@ -1,3 +1,25 @@
 .container {
-    @apply bg-[#fff]
+    @apply flex flex-col gap-7
+}
+
+.info {
+    @apply flex items-start gap-7
+}
+
+.texts.address {
+    @apply mt-3
+}
+.texts.phone {
+    @apply mt-0
+}
+.texts.time {
+    @apply -mt-1
+}
+
+.title {
+    @apply text-2xl font-medium
+}
+
+.data {
+    @apply text-base font-normal
 }

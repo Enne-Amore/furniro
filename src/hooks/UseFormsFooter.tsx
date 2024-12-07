@@ -2,7 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { formFooter, FormFooter } from "../schema/FormFooter";
 
-export const useForms = () => {
+export const useFormsFooter = () => {
   const {register, handleSubmit, formState: {errors}} = useForm<FormFooter>({
     resolver: zodResolver(formFooter)
   })

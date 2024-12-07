@@ -22,6 +22,29 @@
     @apply max-w-72 h-auto
 }
 
+.overlay {
+    @apply hidden absolute inset-0 bg-[#3A3A3A] bg-opacity-70 text-white flex-col justify-center items-center gap-6 transition-opacity duration-300
+}
+.product:hover .overlay {
+    @apply flex
+}
+
+.addToCart {
+    @apply bg-white text-[#B88E2F] text-base font-semibold py-3 px-10
+}
+
+.options {
+    @apply flex items-center gap-5
+}
+
+.op {
+    @apply flex items-center gap-1
+}
+
+.label {
+    @apply text-base font-semibold
+}
+
 .info {
     @apply pt-4 pb-8 px-4 flex flex-col gap-2
 }

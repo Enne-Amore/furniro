@@ -1,0 +1,11 @@
+.container {
+    @apply bg-[#F9F1E7] flex items-center gap-3 py-8 px-20
+}
+
+.wayName {
+    @apply text-[#9F9F9F] text-base font-normal
+}
+
+.productName {
+    @apply text-base font-normal border-l-2 border-[#9F9F9F] py-1 pl-7 ml-2
+}

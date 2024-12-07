@@ -1,9 +1,9 @@
-import { useForms } from "../../hooks/UseForms";
+import { useFormsFooter } from "../../hooks/UseFormsFooter";
 import { FormFooter } from "../../schema/FormFooter";
 import styles from "./Footer.module.css";
 
 export const Newsletter = () => {
-  const { register, handleSubmit, errors } = useForms();
+  const { register, handleSubmit, errors } = useFormsFooter();
 
   const onSubmit = (data: FormFooter) => {};
 
