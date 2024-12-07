@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Product } from "../../../types/Product";
 import { productFetch } from "../../../api/config";
-import shareIcon from '../icons/share.svg';
-import compareIcon from '../icons/compare.svg';
-import heartIcon from '../icons/heart.svg';
+import shareIcon from '../../../assets/share.svg';
+import compareIcon from '../../../assets/compare.svg';
+import heartIcon from '../../../assets/heart.svg';
 import styles from "./Products.module.css";
 
 export const Products = () => {

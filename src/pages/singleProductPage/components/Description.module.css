@@ -1,0 +1,27 @@
+.container {
+    @apply flex flex-col justify-center items-center gap-9 mb-4
+}
+
+.titlesContainer {
+    @apply flex items-center gap-32
+}
+
+.mainTitle {
+    @apply text-2xl font-medium
+}
+
+.secundaryTitle {
+    @apply text-[#9F9F9F] text-2xl font-normal
+}
+
+.paragraph {
+    @apply text-base text-justify font-normal w-2/3
+}
+
+.imgsContainer {
+    @apply flex gap-7
+}
+
+.exampleImg {
+    @apply w-605 h-auto rounded-lg
+}

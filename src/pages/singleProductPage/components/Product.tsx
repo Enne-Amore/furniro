@@ -6,15 +6,17 @@ import styles from './Product.module.css'
 export const Product = () => {
   return (
     <section className={styles.container}>
-      <div>
+      <div className={styles.infoMain}>
         <ImgsProduct />
 
         <InfoProduct />
       </div>
 
-      <hr />
+      <hr className={styles.line} />
 
       <Description />
+
+      <hr className={styles.line} />
     </section>
   )
 }

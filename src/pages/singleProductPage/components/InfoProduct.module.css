@@ -1,0 +1,59 @@
+.container {
+    @apply flex flex-col gap-2 w-605
+}
+
+.title {
+    @apply text-4xl font-normal
+}
+
+.price {
+    @apply text-[#9F9F9F] text-2xl font-medium
+}
+
+.nota {
+    @apply flex items-center gap-5
+}
+
+.labelNota {
+    @apply text-[#9F9F9F] text-xs font-normal border-l-2 border-[#9F9F9F] py-1.5 pl-5 my-1
+}
+
+.paragraph {
+    @apply text-xs font-normal w-423
+}
+
+.inputContainer {
+    @apply flex flex-col gap-3
+}
+
+.labelInput {
+    @apply text-[#9F9F9F] text-sm font-normal
+}
+
+.inputAndBtn {
+    @apply flex items-center gap-4
+}
+
+.qtdInput {
+    @apply text-base text-center font-medium py-4 pr-8 pl-10 border border-[#9F9F9F] rounded-lg w-28
+}
+
+.btn {
+    @apply text-xl font-normal border border-black rounded-2xl py-3.5 px-10
+}
+
+.line {
+    @apply text-[#D9D9D9] h-1 mt-12 mb-5
+}
+
+.trTexts {
+    @apply h-9
+}
+
+.tdText {
+    @apply text-[#9F9F9F] text-base font-normal
+}
+
+.socialMedia {
+    @apply flex gap-6 items-center h-9
+}
