@@ -1,96 +1,98 @@
-import img from '../../../assets/syltherine-item.png'
+import { useEffect, useState } from 'react';
+import { Product } from '../../../types/Product';
+import { productFetch } from '../../../api/config';
+import shareIcon from '../../../assets/share.svg';
+import compareIcon from '../../../assets/compare.svg';
+import heartIcon from '../../../assets/heart.svg';
 import styles from "./RelatedProducts.module.css";
 
 export const RelatedProducts = () => {
+  const [show, setShow] = useState<number>(8)
+  const [products, setProducts] = useState<Product[]>([]);
+
+  const getProducts = async () => {
+    try {
+      const response = await productFetch.get("/products");
+      const data: Product[] = response.data;
+      setProducts(data);
+    } catch (error) {
+      console.log(`Error: ${error}`);
+    }
+  };
+
+  useEffect(() => {
+    getProducts();
+  }, [products]);
+
+  const showMore = () => {
+    setShow(12)
+  }
+
   return (
     <aside className={styles.container}>
-      <h1 className={styles.title}>Our Products</h1>
+      <h2 className={styles.title}>Related Products</h2>
 
       <ul className={styles.productsList}>
-        <article className={styles.product}>
-          <span className={styles.detail}>-30%</span>
+        {products.slice(0, show).map((product) => (
+            <article key={product.id} className={styles.product}>
+              {product.discount && <span className={styles.detail}>{product.discount}%</span>}
 
-          <figure className={styles.productImg}>
-            <img src={img} alt="product" />
-          </figure>
+              <figure className={styles.productImg}>
+                <img src={require(`../../../assets/${product.img.split('/').pop()}`)} alt={product.altImg} />
+              </figure>
 
-          <div className={styles.info}>
-            <h2 className={styles.name}>Syltherine</h2>
+              <div className={styles.overlay}>
+                <button type="button" className={styles.addToCart}>
+                  Add to cart
+                </button>
 
-            <h3 className={styles.legend}>Stylish cafe chair</h3>
+                <div className={styles.options}>
+                  <button type="button" className={styles.op}>
+                    <figure>
+                      <img src={shareIcon} alt="Share icon" />
+                    </figure>
 
-            <div className={styles.priceContainer}>
-              <span className={styles.currentPrice}>Rp 2.500.000</span>
+                    <span className={styles.label}>Share</span>
+                  </button>
 
-              <span className={styles.oldPrice}>Rp 3.500.000</span>
-            </div>
-          </div>
-        </article>
+                  <button type="button" className={styles.op}>
+                    <figure>
+                      <img src={compareIcon} alt="Compare icon" />
+                    </figure>
 
-        <article className={styles.product}>
-          <span className={styles.detail}>-30%</span>
+                    <span className={styles.label}>Compare</span>
+                  </button>
 
-          <figure className={styles.productImg}>
-            <img src={img} alt="product" />
-          </figure>
+                  <button type="button" className={styles.op}>
+                    <figure>
+                      <img src={heartIcon} alt="Heart icon" />
+                    </figure>
 
-          <div className={styles.info}>
-            <h2 className={styles.name}>Syltherine</h2>
+                    <span className={styles.label}>Like</span>
+                  </button>
+                </div>
+              </div>
 
-            <h3 className={styles.legend}>Stylish cafe chair</h3>
+              <div className={styles.info}>
+                <h2 className={styles.name}>{product.name}</h2>
 
-            <div className={styles.priceContainer}>
-              <span className={styles.currentPrice}>Rp 2.500.000</span>
+                <h3 className={styles.legend}>{product.legend}</h3>
 
-              <span className={styles.oldPrice}>Rp 3.500.000</span>
-            </div>
-          </div>
-        </article>
+                <div className={styles.priceContainer}>
+                  <span className={styles.currentPrice}>{product.currentPrice}</span>
 
-        <article className={styles.product}>
-          <span className={styles.detail}>-30%</span>
-
-          <figure className={styles.productImg}>
-            <img src={img} alt="product" />
-          </figure>
-
-          <div className={styles.info}>
-            <h2 className={styles.name}>Syltherine</h2>
-
-            <h3 className={styles.legend}>Stylish cafe chair</h3>
-
-            <div className={styles.priceContainer}>
-              <span className={styles.currentPrice}>Rp 2.500.000</span>
-
-              <span className={styles.oldPrice}>Rp 3.500.000</span>
-            </div>
-          </div>
-        </article>
-
-        <article className={styles.product}>
-          <span className={styles.detail}>-30%</span>
-
-          <figure className={styles.productImg}>
-            <img src={img} alt="product" />
-          </figure>
-
-          <div className={styles.info}>
-            <h2 className={styles.name}>Syltherine</h2>
-
-            <h3 className={styles.legend}>Stylish cafe chair</h3>
-
-            <div className={styles.priceContainer}>
-              <span className={styles.currentPrice}>Rp 2.500.000</span>
-
-              <span className={styles.oldPrice}>Rp 3.500.000</span>
-            </div>
-          </div>
-        </article>
+                  {product.oldPrice && <span className={styles.oldPrice}>{product.oldPrice}</span>}
+                </div>
+              </div>
+            </article>
+          ))}
       </ul>
 
-      <button type="button" className={styles.btn}>
-        Show More
-      </button>
+      {show === 8 && (
+        <button type="button" onClick={showMore} className={styles.btn}>
+          Show More
+        </button>
+      )}
     </aside>
   );
 };

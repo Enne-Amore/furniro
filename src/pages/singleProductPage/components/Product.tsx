@@ -15,6 +15,8 @@ export const Product = () => {
       <hr className={styles.line} />
 
       <Description />
+
+      <hr className={styles.line} />
     </section>
   )
 }
