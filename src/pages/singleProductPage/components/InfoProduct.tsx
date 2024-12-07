@@ -7,35 +7,35 @@ import styles from './InfoProduct.module.css'
 export const InfoProduct = () => {
   return (
     <div className={styles.container}>
-      <h1>Asgaard sofa</h1>
+      <h1 className={styles.title}>Asgaard sofa</h1>
 
-      <span>Rs. 250,000.00</span>
+      <span className={styles.price}>Rs. 250,000.00</span>
 
-      <div>
+      <div className={styles.nota}>
         <img src={stars} alt="4.5 stars" />
 
-        <span>5 Customer Review</span>
+        <span className={styles.labelNota}>5 Customer Review</span>
       </div>
 
-      <p>
+      <p className={styles.paragraph}>
         Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
       </p>
 
       <div>
-        <div>
-          <label>Size</label>
+        <div className={styles.inputContainer}>
+          <label className={styles.labelInput}>Size</label>
 
-          <ul>
+          <ul className={styles.radioContainer}>
             <input type="radio" name="size" id="l" />
             <input type="radio" name="size" id="xl" />
             <input type="radio" name="size" id="xs" />
           </ul>
         </div>
         
-        <div>
-          <label>Color</label>
+        <div className={styles.inputContainer}>
+          <label className={styles.labelInput}>Color</label>
 
-          <ul>
+          <ul className={styles.radioContainer}>
             <input type="radio" name="color" id="blue" />
             <input type="radio" name="color" id="black" />
             <input type="radio" name="color" id="brown" />
@@ -43,52 +43,54 @@ export const InfoProduct = () => {
         </div>
       </div>
 
-      <input type="number" id="qtd" />
+      <div className={styles.inputAndBtn}>
+        <input type="number" id="qtd" defaultValue={1} min={1} className={styles.qtdInput} />
 
-      <button type="button">Add To Cart</button>
+        <button type="button" className={styles.btn}>Add To Cart</button>
+      </div>
 
-      <hr />
+      <hr className={styles.line} />
 
       <table>
-        <tr>
-          <td>SKU</td>
+        <tr className={styles.trTexts}>
+          <td className={styles.tdText}>SKU</td>
 
-          <td>:</td>
+          <td className={styles.tdText}>:</td>
 
-          <td>SS001</td>
+          <td className={styles.tdText}>SS001</td>
         </tr>
 
-        <tr>
-          <td>Category</td>
+        <tr className={styles.trTexts}>
+          <td className={styles.tdText}>Category</td>
 
-          <td>:</td>
+          <td className={styles.tdText}>:</td>
 
-          <td>Sofas</td>
+          <td className={styles.tdText}>Sofas</td>
         </tr>
 
-        <tr>
-          <td>Tags</td>
+        <tr className={styles.trTexts}>
+          <td className={styles.tdText}>Tags</td>
 
-          <td>:</td>
+          <td className={styles.tdText}>:</td>
 
-          <td>Sofa, Chair, Home, Shop</td>
+          <td className={styles.tdText}>Sofa, Chair, Home, Shop</td>
         </tr>
 
-        <tr>
-          <td>Share</td>
+        <tr className={styles.trTexts}>
+          <td className={styles.tdText}>Share</td>
 
-          <td>:</td>
+          <td className={styles.tdText}>:</td>
 
-          <td>
-            <a href="http://facebook.com">
+          <td className={styles.socialMedia}>
+            <a href="http://facebook.com" target='_blank' rel='external noreferrer'>
               <img src={facebookIcon} alt="Facebook icon" />
             </a>
 
-            <a href="http://linkedin.com">
+            <a href="http://linkedin.com" target='_blank' rel='external noreferrer'>
               <img src={linkedinIcon} alt="Linkedin icon" />
             </a>
 
-            <a href="http://twitter.com">
+            <a href="http://twitter.com" target='_blank' rel='external noreferrer'>
               <img src={twitterIcon} alt="Twitter icon" />
             </a>
           </td>
