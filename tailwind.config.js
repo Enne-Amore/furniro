@@ -25,6 +25,9 @@ module.exports = {
       },
       gap: {
         '0.5': '2px'
+      },
+      padding: {
+        '48%': '48%'
       }
     },
   },
