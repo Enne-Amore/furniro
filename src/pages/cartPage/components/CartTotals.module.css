@@ -1,0 +1,27 @@
+.container {
+    @apply bg-[#F9F1E7] pt-5 pb-20 px-16 flex flex-col items-center gap-8
+}
+
+.title {
+    @apply text-3xl font-semibold mb-7
+}
+
+.infoContainer {
+    @apply flex justify-between w-60
+}
+
+.strong {
+    @apply text-base font-medium
+}
+
+.dataSubtotal {
+    @apply text-[#9F9F9F] text-base font-normal
+}
+
+.dataTotal {
+    @apply text-[#B88E2F] text-xl font-medium
+}
+
+.btn {
+    @apply text-base font-normal border border-black rounded-2xl py-3 px-14 mt-3
+}

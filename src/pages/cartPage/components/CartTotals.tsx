@@ -8,13 +8,13 @@ export const CartTotals = () => {
       <div className={styles.infoContainer}>
         <strong className={styles.strong}>Subtotal</strong>
         
-        <span className={styles.data}>Rs. 250,000.00</span>
+        <span className={styles.dataSubtotal}>Rs. 250,000.00</span>
       </div>
 
       <div className={styles.infoContainer}>
         <strong className={styles.strong}>Total</strong>
         
-        <span className={styles.data}>Rs. 250,000.00</span>
+        <span className={styles.dataTotal}>Rs. 250,000.00</span>
       </div>
 
       <button type="button" className={styles.btn}>Check Out</button>

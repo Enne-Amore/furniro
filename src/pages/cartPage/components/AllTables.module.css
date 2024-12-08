@@ -1,0 +1,3 @@
+.container {
+    @apply flex justify-center items-start gap-7 mt-72px mb-85px
+}
