@@ -1,0 +1,7 @@
+.container {
+    @apply relative w-full h-0 pb-48% bg-white
+}
+
+.loading {
+    @apply absolute w-full h-full flex content-center justify-center
+}

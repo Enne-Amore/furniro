@@ -22,6 +22,10 @@
     @apply text-xs font-normal w-423
 }
 
+.inputsContainer {
+    @apply flex flex-col gap-4 mt-2
+}
+
 .inputContainer {
     @apply flex flex-col gap-3
 }
@@ -30,8 +34,12 @@
     @apply text-[#9F9F9F] text-sm font-normal
 }
 
-.inputAndBtn {
+.radioContainer {
     @apply flex items-center gap-4
+}
+
+.inputAndBtn {
+    @apply flex items-center gap-4 mt-8
 }
 
 .qtdInput {

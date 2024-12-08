@@ -1,4 +1,4 @@
-export interface Product {
+export interface ProductType {
   id: string;
   name: string;
   legend: string;
@@ -7,4 +7,6 @@ export interface Product {
   img: string;
   altImg: string;
   discount: number;
+  mainDescription: string;
+  addDescription: string[];
 }
