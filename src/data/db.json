@@ -1,292 +1,516 @@
 {
   "products": [
     {
+      "id": "1",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "2",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "3",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "4",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "5",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "6",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "7",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "8",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "9",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "10",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "11",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "12",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "13",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "14",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "15",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "16",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "17",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "18",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "19",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "20",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "21",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "22",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "23",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "24",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "25",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "26",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "27",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "28",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "29",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "30",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "31",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     },
     {
+      "id": "32",
       "name": "Syltherine",
       "legend": "Stylish cafe chair",
       "currentPrice": "Rp 2.500.000",
       "oldPrice": "Rp 3.500.000",
       "img": "../assets/syltherine-item.png",
       "altImg": "Syltherine image",
-      "discount": "30"
+      "discount": "30",
+      "mainDescription": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
+      "addDescription": [
+        "Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.",
+        
+        "Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel."
+      ]
     }
   ]
 }

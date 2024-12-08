@@ -1,15 +1,22 @@
+import { ComponentProps } from 'react';
 import stars from '../../../assets/stars.png';
 import facebookIcon from '../icons/facebook.svg';
 import linkedinIcon from '../icons/linkedin.svg';
 import twitterIcon from '../icons/twitter.svg';
 import styles from './InfoProduct.module.css'
 
-export const InfoProduct = () => {
+export type InfoProductType = ComponentProps<'h1'> & ComponentProps<'p'> & {
+  name: string;
+  mainDescription: string;
+  price: number;
+}
+
+export const InfoProduct = ({ name, mainDescription, price }: InfoProductType) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Asgaard sofa</h1>
+      <h1 className={styles.title}>{name}</h1>
 
-      <span className={styles.price}>Rs. 250,000.00</span>
+      <span className={styles.price}>{price}</span>
 
       <div className={styles.nota}>
         <img src={stars} alt="4.5 stars" />
@@ -18,7 +25,7 @@ export const InfoProduct = () => {
       </div>
 
       <p className={styles.paragraph}>
-        Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.
+        {mainDescription}
       </p>
 
       <div className={styles.inputsContainer}>

@@ -23,7 +23,7 @@
 }
 
 .inputsContainer {
-    @apply flex flex-col gap-4
+    @apply flex flex-col gap-4 mt-2
 }
 
 .inputContainer {

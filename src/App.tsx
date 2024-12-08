@@ -22,7 +22,7 @@ export function App() {
 
       <Route path="/login" element={<LoginPage />} />
 
-      <Route path="/product:id" element={<SingleProductPage />} />
+      <Route path="/:id" element={<SingleProductPage />} />
     </Routes>
   );
 }
