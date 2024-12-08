@@ -1,0 +1,35 @@
+.container {
+    @apply w-523
+}
+
+.title {
+    @apply text-2xl font-medium
+}
+
+.title.product {
+    @apply text-start
+}
+
+.bodyTable tr {
+    @apply h-12
+}
+
+.nameProduct {
+    @apply text-[#9F9F9F] text-base font-normal
+}
+
+.nameProduct strong {
+    @apply text-black
+}
+
+.subtotal {
+    @apply text-end
+}
+
+.price {
+    @apply text-base font-normal
+}
+
+.finalPrice {
+    @apply text-[#B88E2F] text-2xl font-bold
+}

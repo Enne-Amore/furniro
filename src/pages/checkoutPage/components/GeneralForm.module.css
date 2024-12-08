@@ -1,0 +1,11 @@
+.container {
+    @apply flex flex-col justify-center items-center mt-24 mb-32 mx-44
+}
+
+.title {
+    @apply text-4xl font-semibold w-11/12
+}
+
+.generalFormContainer {
+    @apply flex gap-28
+}

@@ -3,8 +3,8 @@ import styles from "./RadioInputs.module.css";
 export const RadioInputs = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.radioContainer}>
-        <div className={styles.radioInputContainer}>
+      <div className={styles.radioAndParagraphContainer}>
+        <div className={styles.radioContainer}>
           <input
             type="radio"
             id="directBank"
@@ -33,7 +33,7 @@ export const RadioInputs = () => {
           className={styles.input}
         />
 
-        <label htmlFor="directBankTransfer" className={styles.label}>
+        <label htmlFor="directBankTransfer" className={`${styles.label} ${styles.otherLabel}`}>
           Direct Bank Transfer
         </label>
       </div>
@@ -46,7 +46,7 @@ export const RadioInputs = () => {
           className={styles.input}
         />
 
-        <label htmlFor="cashDelivery" className={styles.label}>
+        <label htmlFor="cashDelivery" className={`${styles.label} ${styles.otherLabel}`}>
           Cash On Delivery
         </label>
       </div>
@@ -54,7 +54,7 @@ export const RadioInputs = () => {
       <p className={styles.paragraph}>
         Your personal data will be used to support your experience throughout
         this website, to manage access to your account, and for other purposes
-        described in our privacy policy.
+        described in our <strong>privacy policy.</strong>
       </p>
 
       <button type="submit" className={styles.btn}>

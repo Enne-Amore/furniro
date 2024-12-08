@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './CartTotals.module.css'
 
 export const CartTotals = () => {
@@ -17,7 +18,7 @@ export const CartTotals = () => {
         <span className={styles.dataTotal}>Rs. 250,000.00</span>
       </div>
 
-      <button type="button" className={styles.btn}>Check Out</button>
+      <Link to={'/checkout'} className={styles.btn}>Check Out</Link>
     </div>
   )
 }
