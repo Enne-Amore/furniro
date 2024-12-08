@@ -1,11 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { useFormsLogin } from "../../../hooks/UseFormsLogin";
 import { FormLogin } from "../../../schema/FormLogin";
 import styles from "./Form.module.css";
 
 export const Form = () => {
   const { register, handleSubmit, errors } = useFormsLogin();
+  const navigate = useNavigate();
 
-  const onSubmit = (data: FormLogin) => {};
+  const onSubmit = (data: FormLogin) => {
+    navigate('/shop');
+  };
 
   return (
     <section className={styles.container}>
