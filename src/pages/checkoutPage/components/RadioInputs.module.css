@@ -1,0 +1,35 @@
+.container {
+    @apply flex flex-col gap-3
+}
+
+.radioAndParagraphContainer {
+    @apply flex flex-col gap-3
+}
+
+.radioContainer {
+    @apply flex gap-4
+}
+
+.label {
+    @apply text-base font-medium
+}
+
+.aboutOption {
+    @apply text-[#9F9F9F] text-base text-justify font-light mb-3
+}
+
+.label.otherLabel {
+    @apply text-[#9F9F9F]
+}
+
+.paragraph {
+    @apply text-base text-justify font-light
+}
+
+.paragraph strong {
+    @apply font-semibold
+}
+
+.btn {
+    @apply text-xl font-normal border border-black rounded-2xl mt-7 mx-auto py-4 px-24 w-max
+}

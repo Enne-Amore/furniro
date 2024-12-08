@@ -7,7 +7,7 @@ export const PurchaseDetails = () => {
     <div className={styles.container}>
       <TableData />
 
-      <hr />
+      <hr className={styles.line} />
 
       <RadioInputs />
     </div>
