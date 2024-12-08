@@ -7,24 +7,24 @@ export const ProductsSelected = () => {
     <table className={styles.container}>
       <thead>
         <tr className={styles.headerRowContainer}>
-          <th>{/* img */}</th>
+          <th className={styles.imgContainer}>{/* img */}</th>
 
           <th className={styles.title}>Product</th>
 
           <th className={styles.title}>Price</th>
 
-          <th className={styles.title}>Quantity</th>
+          <th className={`${styles.titleQtd}`}>Quantity</th>
 
           <th className={styles.title}>Subtotal</th>
 
-          <th>{/* remove option */}</th>
+          <th className={styles.iconContainer}>{/* remove option */}</th>
         </tr>
       </thead>
 
       <tbody>
         <tr className={styles.bodyRowContainer}>
           <td className={styles.imgContainer}>
-            <img src={itemImg} alt="" />
+            <img src={itemImg} alt="Item selected" />
           </td>
 
           <td className={styles.data}>
@@ -36,10 +36,10 @@ export const ProductsSelected = () => {
           </td>
 
           <td className={styles.inputContainer}>
-            <input type="number" id="qtd" />
+            <input type="number" id="qtd" defaultValue={1} min={1} />
           </td>
             
-          <td className={styles.data}>
+          <td className={styles.dataSubtotal}>
             Rs. 250,000.00
           </td>
             

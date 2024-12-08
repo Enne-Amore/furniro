@@ -28,6 +28,10 @@ module.exports = {
       },
       padding: {
         '48%': '48%'
+      },
+      margin: {
+        '72px': '72px',
+        '85px': '85px'
       }
     },
   },

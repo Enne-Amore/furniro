@@ -1,0 +1,43 @@
+.headerRowContainer {
+    @apply bg-[#F9F1E7]
+}
+
+.title {
+    @apply text-base text-start font-medium py-4 w-36
+}
+
+.titleQtd {
+    @apply text-base font-medium py-4 w-28
+}
+
+.bodyRowContainer {
+    @apply mt-10 pt-10 h-44
+}
+
+.imgContainer {
+    @apply w-32
+}
+
+.imgContainer img {
+    @apply w-24 h-auto
+}
+
+.data {
+    @apply text-[#9F9F9F] text-base font-normal
+}
+
+.inputContainer input {
+    @apply text-center text-base font-medium border border-[#9F9F9F] rounded-lg w-24 pt-3 pb-1.5 pl-3
+}
+
+.dataSubtotal {
+    @apply text-base font-normal
+}
+
+.iconContainer {
+    @apply w-12
+}
+
+.iconContainer img {
+    @apply cursor-pointer
+}
