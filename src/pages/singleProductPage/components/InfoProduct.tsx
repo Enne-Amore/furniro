@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react';
+import { ChangeEvent, ComponentProps } from 'react';
 import stars from '../../../assets/stars.png';
 import facebookIcon from '../icons/facebook.svg';
 import linkedinIcon from '../icons/linkedin.svg';
@@ -9,9 +9,12 @@ export type InfoProductType = ComponentProps<'h1'> & ComponentProps<'p'> & {
   name: string;
   mainDescription: string;
   price: number;
+  qtd: string;
+  setQtd: (e: ChangeEvent<HTMLInputElement>) => void;
+  addCart: () => void;
 }
 
-export const InfoProduct = ({ name, mainDescription, price }: InfoProductType) => {
+export const InfoProduct = ({ name, mainDescription, price, qtd, setQtd, addCart }: InfoProductType) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>{name}</h1>
@@ -51,9 +54,9 @@ export const InfoProduct = ({ name, mainDescription, price }: InfoProductType) =
       </div>
 
       <div className={styles.inputAndBtn}>
-        <input type="number" id="qtd" defaultValue={1} min={1} className={styles.qtdInput} />
+        <input type="number" id="qtd" value={qtd} onChange={setQtd} defaultValue={1} min={1} className={styles.qtdInput} />
 
-        <button type="button" className={styles.btn}>Add To Cart</button>
+        <button type="button" onClick={addCart} className={styles.btn}>Add To Cart</button>
       </div>
 
       <hr className={styles.line} />

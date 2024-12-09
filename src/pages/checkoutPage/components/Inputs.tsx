@@ -11,8 +11,7 @@ export const Inputs = () => {
     country: "",
     street: "",
     city: "",
-    province: "",
-    addAddress: ""
+    province: ""
   });
 
   const searchZipCode = async (value: string) => {
@@ -28,13 +27,12 @@ export const Inputs = () => {
           return;
         }
         
-        const { regiao, logradouro, localidade, uf, complemento } = response.data;
+        const { regiao, logradouro, localidade, uf } = response.data;
         setAddressData({
           country: regiao,
           street: logradouro,
           city: localidade,
-          province: uf,
-          addAddress: complemento
+          province: uf
         });
       } catch (error) {
         console.error(`Error: ${error}`);
@@ -220,10 +218,6 @@ export const Inputs = () => {
           type="text"
           id="addAddress"
           {...register("addAddress")}
-          value={addressData.addAddress}
-          onChange={(e) =>
-            setAddressData({ ...addressData, addAddress: e.target.value })
-          }
           className={styles.input}
         />
       </div>

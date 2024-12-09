@@ -1,0 +1,15 @@
+.btnList {
+    @apply flex items-center gap-9
+}
+
+.numBtn {
+    @apply bg-[#F9F1E7] text-xl font-normal py-3 px-6 rounded-lg
+}
+
+.activeBtn {
+    @apply bg-[#B88E2F] text-white
+}
+
+.nextBtn {
+    @apply bg-[#F9F1E7] text-xl font-light py-3 px-6 rounded-lg
+}
