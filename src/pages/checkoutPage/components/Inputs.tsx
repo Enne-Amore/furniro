@@ -1,75 +1,199 @@
-import styles from './Inputs.module.css'
+import { useFormsCheckout } from "../../../hooks/UseFormsCheckout";
+import styles from "./Inputs.module.css";
 
 export const Inputs = () => {
+  const { register, errors } = useFormsCheckout();
+
   return (
     <div className={styles.container}>
       <div className={styles.twoInputsContainer}>
         <div className={styles.inputContainer}>
-          <label htmlFor="firstName" className={styles.label}>First name</label>
-          
-          <input type="text" id='firstName' className={styles.input} />
+          <label htmlFor="firstName" className={styles.label}>
+            First name
+          </label>
+
+          <div className={styles.withErrorsContainer}>
+            <input
+              type="text"
+              id="firstName"
+              {...register("firstName")}
+              className={styles.input}
+            />
+
+            {errors.firstName && (
+              <span className={styles.errors}>{errors.firstName?.message}</span>
+            )}
+          </div>
         </div>
-        
+
         <div className={styles.inputContainer}>
-          <label htmlFor="lastName" className={styles.label}>Last name</label>
-          
-          <input type="text" id='lastName' className={styles.input} />
+          <label htmlFor="lastName" className={styles.label}>
+            Last name
+          </label>
+
+          <div className={styles.withErrorsContainer}>
+            <input
+              type="text"
+              id="lastName"
+              {...register("lastName")}
+              className={styles.input}
+            />
+
+            {errors.lastName && (
+              <span className={styles.errors}>{errors.lastName?.message}</span>
+            )}
+          </div>
         </div>
       </div>
 
       <div className={styles.inputContainer}>
-        <label htmlFor="company" className={styles.label}>Company Name (Optional)</label>
+        <label htmlFor="company" className={styles.label}>
+          Company Name (Optional)
+        </label>
 
-        <input type="email" id='company' className={styles.input} />
+        <input
+          type="email"
+          id="company"
+          {...register("company")}
+          className={styles.input}
+        />
       </div>
 
       <div className={styles.inputContainer}>
-        <label htmlFor="code" className={styles.label}>ZIP code</label>
+        <label htmlFor="zipCode" className={styles.label}>
+          ZIP code
+        </label>
 
-        <input type="text" id='code' className={styles.input} />
+        <div className={styles.withErrorsContainer}>
+          <input
+            type="text"
+            id="zipCode"
+            {...register("zipCode")}
+            className={styles.input}
+          />
+
+          {errors.zipCode && (
+            <span className={styles.errors}>{errors.zipCode?.message}</span>
+          )}
+        </div>
       </div>
 
       <div className={styles.inputContainer}>
-        <label htmlFor="contry" className={styles.label}>Country / Region</label>
+        <label htmlFor="country" className={styles.label}>
+          Country / Region
+        </label>
 
-        <input type="text" id='contry' className={styles.input} />
+        <div className={styles.withErrorsContainer}>
+          <input
+            type="text"
+            id="country"
+            {...register("country")}
+            className={styles.input}
+          />
+
+          {errors.country && (
+            <span className={styles.errors}>{errors.country?.message}</span>
+          )}
+        </div>
       </div>
 
       <div className={styles.inputContainer}>
-        <label htmlFor="street" className={styles.label}>Street address</label>
+        <label htmlFor="street" className={styles.label}>
+          Street address
+        </label>
 
-        <input type="text" id='street' className={styles.input} />
+        <div className={styles.withErrorsContainer}>
+          <input
+            type="text"
+            id="street"
+            {...register("street")}
+            className={styles.input}
+          />
+          {errors.street && (
+            <span className={styles.errors}>{errors.street?.message}</span>
+          )}
+        </div>
       </div>
 
       <div className={styles.inputContainer}>
-        <label htmlFor="city" className={styles.label}>Town / City</label>
+        <label htmlFor="city" className={styles.label}>
+          Town / City
+        </label>
 
-        <input type="text" id='city' className={styles.input} />
+        <div className={styles.withErrorsContainer}>
+          <input
+            type="text"
+            id="city"
+            {...register("city")}
+            className={styles.input}
+          />
+
+          {errors.city && (
+            <span className={styles.errors}>{errors.city?.message}</span>
+          )}
+        </div>
       </div>
 
       <div className={styles.inputContainer}>
-        <label htmlFor="province" className={styles.label}>Province</label>
+        <label htmlFor="province" className={styles.label}>
+          Province
+        </label>
 
-        <input type="text" id='province' className={styles.input} />
+        <div className={styles.withErrorsContainer}>
+          <input
+            type="text"
+            id="province"
+            {...register("province")}
+            className={styles.input}
+          />
+
+          {errors.province && (
+            <span className={styles.errors}>{errors.province?.message}</span>
+          )}
+        </div>
       </div>
 
       <div className={styles.inputContainer}>
-        <label htmlFor="address" className={styles.label}>Add-on address</label>
+        <label htmlFor="address" className={styles.label}>
+          Add-on address
+        </label>
 
-        <input type="text" id='address' className={styles.input} />
+        <input
+          type="text"
+          id="address"
+          {...register("address")}
+          className={styles.input}
+        />
       </div>
 
       <div className={styles.inputContainer}>
-        <label htmlFor="email" className={styles.label}>Email address</label>
+        <label htmlFor="email" className={styles.label}>
+          Email address
+        </label>
 
-        <input type="email" id='email' className={styles.input} />
+        <div className={styles.withErrorsContainer}>
+          <input
+            type="email"
+            id="email"
+            {...register("email")}
+            className={styles.input}
+          />
+
+          {errors.email && (
+            <span className={styles.errors}>{errors.email?.message}</span>
+          )}
+        </div>
       </div>
 
       <div className={styles.inputContainer}>
-        <input type="text" id='addInfo' placeholder='Additional information' className={styles.input} />
+        <input
+          type="text"
+          id="addInfo"
+          {...register("addInfo")}
+          placeholder="Additional information"
+          className={styles.input}
+        />
       </div>
-
-      <button type="submit" className={styles.btn}>Submit</button>
     </div>
-  )
-}
+  );
+};

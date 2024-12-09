@@ -6,6 +6,7 @@ export const formContact = z.object({
     .string()
     .min(1, "Must have at least 1 character!")
     .email("Must be a valid email!"),
+  subject: z.string(),
   message: z.string().min(1, "Must have at least 1 character!"),
 });
 
