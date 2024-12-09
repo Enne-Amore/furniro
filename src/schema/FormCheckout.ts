@@ -9,7 +9,7 @@ export const formCheckout = z.object({
   street: z.string().min(1, "Must have at least 1 character!"),
   city: z.string().min(1, "Must have at least 1 character!"),
   province: z.string().min(1, "Must have at least 1 character!"),
-  address: z.string(),
+  addAddress: z.string(),
   email: z
     .string()
     .min(1, "Must have at least 1 character!")

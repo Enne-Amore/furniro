@@ -1,8 +1,46 @@
+import { useState } from "react";
 import { useFormsCheckout } from "../../../hooks/UseFormsCheckout";
+import axios from "axios";
 import styles from "./Inputs.module.css";
 
 export const Inputs = () => {
   const { register, errors } = useFormsCheckout();
+
+  const [zipCode, setZipCode] = useState<string>("");
+  const [addressData, setAddressData] = useState({
+    country: "",
+    street: "",
+    city: "",
+    province: "",
+    addAddress: ""
+  });
+
+  const searchZipCode = async (value: string) => {
+    const zipCode = value.replace(/\D/g, "");
+    if (zipCode.length === 8) {
+      try {
+        const response = await axios.get(
+          `https://viacep.com.br/ws/${zipCode}/json/`
+        );
+
+        if (response.data.error) {
+          console.error(`Error: ${response.data.error}`);
+          return;
+        }
+        
+        const { regiao, logradouro, localidade, uf, complemento } = response.data;
+        setAddressData({
+          country: regiao,
+          street: logradouro,
+          city: localidade,
+          province: uf,
+          addAddress: complemento
+        });
+      } catch (error) {
+        console.error(`Error: ${error}`);
+      }
+    }
+  };
 
   return (
     <div className={styles.container}>
@@ -69,6 +107,10 @@ export const Inputs = () => {
             type="text"
             id="zipCode"
             {...register("zipCode")}
+            maxLength={9}
+            value={zipCode}
+            onChange={(e) => setZipCode(e.target.value)}
+            onBlur={() => searchZipCode(zipCode)}
             className={styles.input}
           />
 
@@ -88,6 +130,10 @@ export const Inputs = () => {
             type="text"
             id="country"
             {...register("country")}
+            value={addressData.country}
+            onChange={(e) =>
+              setAddressData({ ...addressData, country: e.target.value })
+            }
             className={styles.input}
           />
 
@@ -107,6 +153,10 @@ export const Inputs = () => {
             type="text"
             id="street"
             {...register("street")}
+            value={addressData.street}
+            onChange={(e) =>
+              setAddressData({ ...addressData, street: e.target.value })
+            }
             className={styles.input}
           />
           {errors.street && (
@@ -125,6 +175,10 @@ export const Inputs = () => {
             type="text"
             id="city"
             {...register("city")}
+            value={addressData.city}
+            onChange={(e) =>
+              setAddressData({ ...addressData, city: e.target.value })
+            }
             className={styles.input}
           />
 
@@ -144,6 +198,10 @@ export const Inputs = () => {
             type="text"
             id="province"
             {...register("province")}
+            value={addressData.province}
+            onChange={(e) =>
+              setAddressData({ ...addressData, province: e.target.value })
+            }
             className={styles.input}
           />
 
@@ -154,14 +212,18 @@ export const Inputs = () => {
       </div>
 
       <div className={styles.inputContainer}>
-        <label htmlFor="address" className={styles.label}>
+        <label htmlFor="addAddress" className={styles.label}>
           Add-on address
         </label>
 
         <input
           type="text"
-          id="address"
-          {...register("address")}
+          id="addAddress"
+          {...register("addAddress")}
+          value={addressData.addAddress}
+          onChange={(e) =>
+            setAddressData({ ...addressData, addAddress: e.target.value })
+          }
           className={styles.input}
         />
       </div>
