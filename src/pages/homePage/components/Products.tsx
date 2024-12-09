@@ -18,7 +18,7 @@ export const Products = () => {
       const data: ProductType[] = response.data;
       setProducts(data);
     } catch (error) {
-      console.log(`Error: ${error}`);
+      console.error(`Error: ${error}`);
     }
   };
 

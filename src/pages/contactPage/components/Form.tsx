@@ -8,8 +8,6 @@ export const Form = () => {
   const { register, handleSubmit, errors } = useFormsContact();
 
   const onSubmit = (data: FormContact) => {
-    console.table(data);
-    
     navigate("/");
   };
 
