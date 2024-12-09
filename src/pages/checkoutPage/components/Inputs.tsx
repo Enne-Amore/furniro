@@ -51,7 +51,12 @@ export const Inputs = () => {
           Company Name (Optional)
         </label>
 
-        <input type="email" id="company" className={styles.input} />
+        <input
+          type="email"
+          id="company"
+          {...register("company")}
+          className={styles.input}
+        />
       </div>
 
       <div className={styles.inputContainer}>
@@ -153,7 +158,12 @@ export const Inputs = () => {
           Add-on address
         </label>
 
-        <input type="text" id="address" className={styles.input} />
+        <input
+          type="text"
+          id="address"
+          {...register("address")}
+          className={styles.input}
+        />
       </div>
 
       <div className={styles.inputContainer}>
@@ -179,6 +189,7 @@ export const Inputs = () => {
         <input
           type="text"
           id="addInfo"
+          {...register("addInfo")}
           placeholder="Additional information"
           className={styles.input}
         />

@@ -63,6 +63,7 @@ export const Form = () => {
         <input
           type="text"
           id="subject"
+          {...register("subject")}
           placeholder="This is an optional"
           className={styles.input}
         />
