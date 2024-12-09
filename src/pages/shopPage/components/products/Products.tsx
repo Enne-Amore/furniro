@@ -11,14 +11,6 @@ import styles from "./Products.module.css";
 
 export const Products = ({ show }: ViewList) => {
   const [products, setProducts] = useState<ProductType[]>([]);
-  const [name, setName] = useState<string>("")
-  const [legend, setLegend] = useState<string>("")
-  const [currentPrice, setCurrentPrice] = useState<number>(0)
-  const [oldPrice, setOldPrice] = useState<number>(0)
-  const [img, setImg] = useState<string>("")
-  const [altImg, setAltImg] = useState<string>("")
-  const [discount, setDiscount] = useState<number>(0)
-  const [mainDescription, setMainDescription] = useState<string>("")
 
   const getProducts = async () => {
     try {
@@ -33,28 +25,6 @@ export const Products = ({ show }: ViewList) => {
   useEffect(() => {
     getProducts();
   }, [products]);
-
-  const addCart = async () => {
-    const productSelected: object = {
-      name,
-      legend,
-      currentPrice,
-      oldPrice,
-      img,
-      altImg,
-      discount,
-      mainDescription
-    }
-
-    try {
-      const response = await productFetch.post("/cart", {
-        ...productSelected
-      });
-      return response.data
-    } catch (error) {
-      console.error(`Error: ${error}`);
-    }
-  }
 
   return (
     <div className={styles.container}>
@@ -79,7 +49,7 @@ export const Products = ({ show }: ViewList) => {
                 </figure>
                 
                 <div className={styles.overlay}>
-                  <button type="button" onClick={addCart} className={styles.addToCart}>
+                  <button type="button" className={styles.addToCart}>
                     Add to cart
                   </button>
                 
