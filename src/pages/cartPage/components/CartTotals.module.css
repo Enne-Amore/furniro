@@ -7,7 +7,7 @@
 }
 
 .infoContainer {
-    @apply flex justify-between w-60
+    @apply flex justify-between min-w-60
 }
 
 .strong {

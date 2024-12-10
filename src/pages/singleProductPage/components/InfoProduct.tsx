@@ -19,7 +19,7 @@ export const InfoProduct = ({ name, mainDescription, price, qtd, setQtd, addCart
     <div className={styles.container}>
       <h1 className={styles.title}>{name}</h1>
 
-      <span className={styles.price}>{price}</span>
+      <span className={styles.price}>Rs. {price}</span>
 
       <div className={styles.nota}>
         <img src={stars} alt="4.5 stars" />

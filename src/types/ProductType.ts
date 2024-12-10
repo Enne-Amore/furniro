@@ -9,4 +9,5 @@ export interface ProductType {
   discount: number;
   mainDescription: string;
   addDescription: string[];
+  qtd: number;
 }

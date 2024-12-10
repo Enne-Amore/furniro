@@ -87,11 +87,11 @@ export const Products = ({ show }: ViewList) => {
                 
                   <div className={styles.priceContainer}>
                     <span className={styles.currentPrice}>
-                      {product.currentPrice}
+                      Rp {product.currentPrice}
                     </span>
                 
                     {product.oldPrice && (
-                      <span className={styles.oldPrice}>{product.oldPrice}</span>
+                      <span className={styles.oldPrice}>Rp {product.oldPrice}</span>
                     )}
                   </div>
                 </div>
