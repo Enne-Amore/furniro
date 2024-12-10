@@ -9,22 +9,27 @@ import heartIcon from "../../../assets/heart.svg";
 import styles from "./RelatedProducts.module.css";
 
 export const RelatedProducts = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [show, setShow] = useState<number>(8);
   const [products, setProducts] = useState<ProductType[]>([]);
 
   const getProducts = async () => {
+    setIsLoading(true);
+
     try {
       const response = await productFetch.get("/products");
       const data: ProductType[] = response.data;
       setProducts(data);
     } catch (error) {
       console.error(`Error: ${error}`);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   useEffect(() => {
     getProducts();
-  }, [products]);
+  }, []);
 
   const showMore = () => {
     setShow(12);
@@ -35,7 +40,7 @@ export const RelatedProducts = () => {
       <h2 className={styles.title}>Related Products</h2>
 
       <ul className={styles.productsList}>
-        {products.length === 0 ? (
+        {isLoading ? (
           <Loading />
         ) : (
           products.slice(0, show).map((product) => (
