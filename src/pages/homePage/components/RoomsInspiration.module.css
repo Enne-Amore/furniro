@@ -31,7 +31,7 @@
 }
 
 .infoContainer {
-    @apply absolute bottom-5 left-5 flex items-end
+    @apply absolute bottom-5 left-5 flex items-end select-none
 }
 
 .infoRoom {

@@ -1,5 +1,6 @@
 import { ComponentProps } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 import styles from "./WherePage.module.css";
 
 export type WherePageData = ComponentProps<"h1"> &
@@ -10,6 +11,10 @@ export type WherePageData = ComponentProps<"h1"> &
 export const WherePage = ({ namePage }: WherePageData) => {
   return (
     <article className={styles.container}>
+      <figure className={styles.logo}>
+        <img src={logo} alt="Furniro logo" />
+      </figure>
+
       <h1 className={styles.namePage}>{namePage}</h1>
 
       <span className={styles.way}>
