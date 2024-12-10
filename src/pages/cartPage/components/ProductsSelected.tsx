@@ -22,7 +22,7 @@ export const ProductsSelected = ({
 
     toast.success('Product successfully deleted from cart', {
       position: "top-center",
-      autoClose: 2000
+      autoClose: 1500
     })
   };
 

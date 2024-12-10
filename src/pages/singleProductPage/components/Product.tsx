@@ -67,7 +67,7 @@ export const Product = () => {
 
       toast.success('Product added to cart successfully', {
         position: "top-center",
-        autoClose: 2000
+        autoClose: 1500
       })
 
       return response.data;

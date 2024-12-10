@@ -1,11 +1,15 @@
-import { useState } from "react";
-import { useFormsCheckout } from "../../../hooks/UseFormsCheckout";
+import { ComponentProps, useState } from "react";
+import { FieldErrors, UseFormRegister } from "react-hook-form";
+import { FormCheckout } from "../../../schema/FormCheckout";
 import axios from "axios";
 import styles from "./Inputs.module.css";
 
-export const Inputs = () => {
-  const { register, errors } = useFormsCheckout();
+export type InputsType = ComponentProps<'input'> & ComponentProps<'span'> & {
+  register: UseFormRegister<FormCheckout>;
+  errors: FieldErrors<FormCheckout>;
+}
 
+export const Inputs = ({ register, errors }: InputsType) => {
   const [zipCode, setZipCode] = useState<string>("");
   const [addressData, setAddressData] = useState({
     country: "",
@@ -88,7 +92,7 @@ export const Inputs = () => {
         </label>
 
         <input
-          type="email"
+          type="text"
           id="company"
           {...register("company")}
           className={styles.input}

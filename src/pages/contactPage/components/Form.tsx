@@ -11,12 +11,12 @@ export const Form = () => {
   const onSubmit = (data: FormContact) => {
     toast.success('Message sent successfully', {
       position: "top-center",
-      autoClose: 2000
+      autoClose: 1500
     })
 
     setTimeout(() => {
       navigate("/");
-    }, 2000)
+    }, 1500)
   };
 
   return (

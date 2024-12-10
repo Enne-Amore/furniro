@@ -1,5 +1,9 @@
 .container {
-    @apply bg-where-page-background bg-cover bg-center flex flex-col justify-center items-center gap-3 py-32
+    @apply bg-where-page-background bg-cover bg-center flex flex-col justify-center items-center gap-3 py-32 select-none
+}
+
+.logo {
+    @apply flex items-center gap-1
 }
 
 .namePage {

@@ -9,7 +9,7 @@ export const Newsletter = () => {
   const onSubmit = (data: FormFooter) => {
     toast.success('Email sent successfully', {
       position: "top-center",
-      autoClose: 2000
+      autoClose: 1500
     })
   };
 

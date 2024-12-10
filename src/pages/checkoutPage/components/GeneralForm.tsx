@@ -2,12 +2,24 @@ import { Inputs } from "./Inputs";
 import { PurchaseDetails } from "./PurchaseDetails";
 import { useFormsCheckout } from "../../../hooks/UseFormsCheckout";
 import { FormCheckout } from "../../../schema/FormCheckout";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 import styles from "./GeneralForm.module.css";
 
 export const GeneralForm = () => {
-  const { handleSubmit } = useFormsCheckout();
+  const navigate = useNavigate();
+  const { register, handleSubmit, errors } = useFormsCheckout();
 
-  const onSubmit = (data: FormCheckout) => {};
+  const onSubmit = (data: FormCheckout) => {
+    toast.success('Message sent successfully', {
+      position: "top-center",
+      autoClose: 1500
+    })
+
+    setTimeout(() => {
+      navigate("/");
+    }, 1500)
+  };
 
   return (
     <section className={styles.container}>
@@ -17,7 +29,7 @@ export const GeneralForm = () => {
         onSubmit={handleSubmit(onSubmit)}
         className={styles.generalFormContainer}
       >
-        <Inputs />
+        <Inputs register={register} errors={errors} />
 
         <PurchaseDetails />
       </form>

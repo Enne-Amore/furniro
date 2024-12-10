@@ -11,11 +11,11 @@ export const Form = () => {
   const onSubmit = (data: FormLogin) => {
     setTimeout(() => {
       navigate('/shop');
-    }, 2000)
+    }, 1500)
 
     toast.success('Login successful', {
       position: "top-center",
-      autoClose: 2000
+      autoClose: 1500
     })
   };
 
