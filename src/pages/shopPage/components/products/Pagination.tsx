@@ -1,24 +1,45 @@
-import { Link } from "react-router-dom";
+import { ComponentProps } from "react";
 import styles from "./Pagination.module.css";
 
-export const Pagination = () => {
+export type PaginationProps = ComponentProps<'button'> & {
+  currentPage: number;
+  setCurrentPage: (page: number) => void;
+  totalPages: number;
+}
+
+export const Pagination = ({
+  currentPage,
+  setCurrentPage,
+  totalPages,
+}: PaginationProps) => {
+  const handlePageChange = (page: number) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+  };
+
   return (
     <div className={styles.btnList}>
-      <Link to={"/shop/1"} className={`${styles.numBtn} ${styles.activeBtn}`}>
-        1
-      </Link>
+      {[...Array(totalPages)].map((_, index) => (
+        <button
+          key={index}
+          className={`${styles.numBtn} ${currentPage === index + 1 ? styles.activeBtn : ""}`}
+          onClick={() => handlePageChange(index + 1)}
+        >
+          {index + 1}
+        </button>
+      ))}
 
-      <Link to={"/shop/2"} className={`${styles.numBtn}`}>
-        2
-      </Link>
+      {currentPage !== totalPages && (
+        <button
+          type="button"
+          className={styles.nextBtn}
+          onClick={() => handlePageChange(currentPage + 1)}
+        >
+          Next
+        </button>
+      )}
 
-      <Link to={"/shop/3"} className={`${styles.numBtn}`}>
-        3
-      </Link>
-
-      <button type="button" className={styles.nextBtn}>
-        Next
-      </button>
     </div>
   );
 };
