@@ -44,6 +44,7 @@ export const RelatedProducts = () => {
                 {product.discount && (
                   <span className={styles.detail}>{product.discount}%</span>
                 )}
+
                 <figure className={styles.productImg}>
                   <img
                     src={require(`../../../assets/${product.img
@@ -52,40 +53,51 @@ export const RelatedProducts = () => {
                     alt={product.altImg}
                   />
                 </figure>
+
                 <div className={styles.overlay}>
                   <button type="button" className={styles.addToCart}>
                     Add to cart
                   </button>
+
                   <div className={styles.options}>
                     <button type="button" className={styles.op}>
                       <figure>
                         <img src={shareIcon} alt="Share icon" />
                       </figure>
+
                       <span className={styles.label}>Share</span>
                     </button>
+
                     <button type="button" className={styles.op}>
                       <figure>
                         <img src={compareIcon} alt="Compare icon" />
                       </figure>
+                    
                       <span className={styles.label}>Compare</span>
                     </button>
+                    
                     <button type="button" className={styles.op}>
                       <figure>
                         <img src={heartIcon} alt="Heart icon" />
                       </figure>
+                    
                       <span className={styles.label}>Like</span>
                     </button>
                   </div>
                 </div>
+
                 <div className={styles.info}>
                   <h2 className={styles.name}>{product.name}</h2>
+
                   <h3 className={styles.legend}>{product.legend}</h3>
+
                   <div className={styles.priceContainer}>
                     <span className={styles.currentPrice}>
-                      {product.currentPrice}
+                      Rp {product.currentPrice}
                     </span>
+
                     {product.oldPrice && (
-                      <span className={styles.oldPrice}>{product.oldPrice}</span>
+                      <span className={styles.oldPrice}>Rp {product.oldPrice}</span>
                     )}
                   </div>
                 </div>
