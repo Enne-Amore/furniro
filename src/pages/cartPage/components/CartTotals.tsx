@@ -24,17 +24,17 @@ export const CartTotals = ({
     if(products.length > 0) {
         toast.success(`Purchase in progress successfully`, {
           position: "top-center",
-          autoClose: 2000
+          autoClose: 1500
         })
         
         setTimeout(() => {
           navigate('/checkout')
-        }, 2000)
+        }, 1500)
 
       } else {
         toast.error(`No purchases in the cart`, {
           position: "top-center",
-          autoClose: 2000
+          autoClose: 1500
         })
       }
   }
