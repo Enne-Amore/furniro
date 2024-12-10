@@ -26,7 +26,7 @@ export const AllTables = () => {
     <section className={styles.container}>
       <ProductsSelected products={products} setProducts={setProducts} />
 
-      <CartTotals />
+      <CartTotals products={products} />
     </section>
   )
 }
