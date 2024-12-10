@@ -1,6 +1,7 @@
 import { ProductType } from "../../../types/ProductType";
 import { productFetch } from "../../../api/config";
 import { Dispatch, SetStateAction } from "react";
+import { toast } from "react-toastify";
 import itemImg from "../../../assets/asgaard-sofa-cart.png";
 import deleteIcon from "../icons/remove.svg";
 import styles from "./ProductsSelected.module.css";
@@ -18,6 +19,11 @@ export const ProductsSelected = ({
     const filteredProducts = products.filter((product) => product.id !== id);
 
     setProducts(filteredProducts);
+
+    toast.success('Product successfully deleted from cart', {
+      position: "top-center",
+      autoClose: 2000
+    })
   };
 
   return (

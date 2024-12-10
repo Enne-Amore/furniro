@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useFormsLogin } from "../../../hooks/UseFormsLogin";
 import { FormLogin } from "../../../schema/FormLogin";
+import { toast } from "react-toastify";
 import styles from "./Form.module.css";
 
 export const Form = () => {
@@ -8,7 +9,14 @@ export const Form = () => {
   const navigate = useNavigate();
 
   const onSubmit = (data: FormLogin) => {
-    navigate('/shop');
+    setTimeout(() => {
+      navigate('/shop');
+    }, 2000)
+
+    toast.success('Login successful', {
+      position: "top-center",
+      autoClose: 2000
+    })
   };
 
   return (

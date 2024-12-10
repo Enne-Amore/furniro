@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useFormsContact } from "../../../hooks/UseFormsContact";
 import { FormContact } from "../../../schema/FormContact";
+import { toast } from "react-toastify";
 import styles from "./Form.module.css";
 
 export const Form = () => {
@@ -8,7 +9,14 @@ export const Form = () => {
   const { register, handleSubmit, errors } = useFormsContact();
 
   const onSubmit = (data: FormContact) => {
-    navigate("/");
+    toast.success('Message sent successfully', {
+      position: "top-center",
+      autoClose: 2000
+    })
+
+    setTimeout(() => {
+      navigate("/");
+    }, 2000)
   };
 
   return (

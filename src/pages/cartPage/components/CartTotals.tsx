@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { ProductType } from "../../../types/ProductType";
-import { toast, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
 import styles from "./CartTotals.module.css";
 
 export const CartTotals = ({
@@ -23,17 +22,19 @@ export const CartTotals = ({
 
   const handleCheckout = () => {
     if(products.length > 0) {
-        toast.success(`Success!`, {
-          position: "top-center"
+        toast.success(`Purchase in progress successfully`, {
+          position: "top-center",
+          autoClose: 2000
         })
         
         setTimeout(() => {
-          navigate('/checkout', {state: {products}})
-        }, 1000)
+          navigate('/checkout')
+        }, 2000)
 
       } else {
         toast.error(`No purchases in the cart`, {
-          position: "top-center"
+          position: "top-center",
+          autoClose: 2000
         })
       }
   }
@@ -57,8 +58,6 @@ export const CartTotals = ({
       <button type="button" onClick={handleCheckout} className={styles.btn}>
         Check Out
       </button>
-
-      <ToastContainer />
     </div>
   );
 };
