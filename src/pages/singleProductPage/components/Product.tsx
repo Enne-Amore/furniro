@@ -4,6 +4,7 @@ import { Description } from "./Description";
 import { useParams } from "react-router-dom";
 import { productFetch } from "../../../api/config";
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import styles from "./Product.module.css";
 
 export const Product = () => {
@@ -63,8 +64,12 @@ export const Product = () => {
       const response = await productFetch.post("/cart", {
         ...productSelected,
       });
-      console.table(response);
-      console.table(response.data);
+
+      toast.success('Product added to cart successfully', {
+        position: "top-center",
+        autoClose: 2000
+      })
+
       return response.data;
     } catch (error) {
       console.error(`Error: ${error}`);

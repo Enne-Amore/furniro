@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import { useFormsFooter } from "../../hooks/UseFormsFooter";
 import { FormFooter } from "../../schema/FormFooter";
 import styles from "./Footer.module.css";
@@ -5,7 +6,12 @@ import styles from "./Footer.module.css";
 export const Newsletter = () => {
   const { register, handleSubmit, errors } = useFormsFooter();
 
-  const onSubmit = (data: FormFooter) => {};
+  const onSubmit = (data: FormFooter) => {
+    toast.success('Email sent successfully', {
+      position: "top-center",
+      autoClose: 2000
+    })
+  };
 
   return (
     <div className={styles.newsletter}>
