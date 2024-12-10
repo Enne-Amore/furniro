@@ -41,7 +41,7 @@ export const ProductsSelected = ({
       <tbody>
         {products &&
           products.map((product) => (
-            <tr className={styles.bodyRowContainer}>
+            <tr key={product.id} className={styles.bodyRowContainer}>
               <td className={styles.imgContainer}>
                 <img
                   src={`../../${product.img}` || itemImg}
@@ -63,9 +63,7 @@ export const ProductsSelected = ({
                 />
               </td>
 
-              <td className={styles.dataSubtotal}>
-                Rs. {Number(product.currentPrice) * Number(product.qtd)}
-              </td>
+              <td className={styles.dataSubtotal}>Rs. {product.currentPrice * product.qtd}</td>
 
               <td className={styles.iconContainer}>
                 <img
