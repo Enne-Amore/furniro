@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import styles from "./WherePage.module.css";
 
 export const WherePage = () => {
   return (
     <div className={styles.container}>
-      <span className={styles.wayName}>home</span>
+      <Link to={'/'} className={styles.wayName}>home</Link>
       
       <strong className={styles.greaterSign}>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -11,7 +12,7 @@ export const WherePage = () => {
         </svg>
       </strong>
       
-      <span className={styles.wayName}>shop</span>
+      <Link to={'/shop'} className={styles.wayName}>shop</Link>
       
       <strong className={styles.greaterSign}>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

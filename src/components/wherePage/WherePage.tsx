@@ -1,4 +1,5 @@
 import { ComponentProps } from "react";
+import { Link } from "react-router-dom";
 import styles from "./WherePage.module.css";
 
 export type WherePageData = ComponentProps<"h1"> &
@@ -13,7 +14,7 @@ export const WherePage = ({ namePage }: WherePageData) => {
 
       <span className={styles.way}>
         <strong className={styles.strong}>
-          <span>Home</span>
+          <Link to={'/'}>Home</Link>
           
           <svg
             xmlns="http://www.w3.org/2000/svg"
