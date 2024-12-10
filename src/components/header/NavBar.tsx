@@ -9,7 +9,7 @@ export const NavBar = () => {
 
         <Link to={'/shop'} className={styles.link}>Shop</Link>
 
-        <Link to={'/about'} className={styles.link}>About</Link>
+        <Link to={''} className={styles.link}>About</Link>
 
         <Link to={'/contact'} className={styles.link}>Contact</Link>
       </ul>
