@@ -1,5 +1,5 @@
 .container {
-    @apply flex flex-col gap-10 justify-center items-center my-14
+    @apply mt-14 mb-10
 }
 
 .productsList {

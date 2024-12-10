@@ -9,32 +9,37 @@ import compareIcon from "../../../../assets/compare.svg";
 import heartIcon from "../../../../assets/heart.svg";
 import styles from "./Products.module.css";
 
-export const Products = ({ show }: ViewList) => {
+export const Products = ({ show, startingPosition }: ViewList) => {
+  const [isLoading, setIsLoading] = useState(true);
   const [products, setProducts] = useState<ProductType[]>([]);
 
   const getProducts = async () => {
+    setIsLoading(true);
+
     try {
       const response = await productFetch.get("/products");
       const data: ProductType[] = response.data;
       setProducts(data);
     } catch (error) {
       console.error(`Error: ${error}`);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   useEffect(() => {
     getProducts();
-  }, [products]);
+  }, []);
 
   return (
     <div className={styles.container}>
       <ul className={styles.productsList}>
-        {products.length === 0 ? (
+        {isLoading ? (
           <Loading />
         ) : (
-          products.slice(0, show).map((product) => (
-            <Link to={`/${product.id}`}>
-              <article key={product.id} className={styles.product}>
+          products.slice(startingPosition || 0, (startingPosition || 0) + show).map((product) => (
+            <Link to={`/${product.id}`} key={product.id}>
+              <article className={styles.product}>
                 {product.discount && (
                   <span className={styles.detail}>{product.discount}%</span>
                 )}
