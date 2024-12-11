@@ -7,10 +7,7 @@ export const Newsletter = () => {
   const { register, handleSubmit, errors } = useFormsFooter();
 
   const onSubmit = (data: FormFooter) => {
-    toast.success('Email sent successfully', {
-      position: "top-center",
-      autoClose: 1500
-    })
+    toast.success('Email sent successfully')
   };
 
   return (

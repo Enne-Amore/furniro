@@ -8,13 +8,10 @@ import styles from "./GeneralForm.module.css";
 
 export const GeneralForm = () => {
   const navigate = useNavigate();
-  const { register, handleSubmit, errors } = useFormsCheckout();
+  const { register, setValue, handleSubmit, errors } = useFormsCheckout();
 
   const onSubmit = (data: FormCheckout) => {
-    toast.success('Message sent successfully', {
-      position: "top-center",
-      autoClose: 1500
-    })
+    toast.success('Message sent successfully')
 
     setTimeout(() => {
       navigate("/");
@@ -29,7 +26,7 @@ export const GeneralForm = () => {
         onSubmit={handleSubmit(onSubmit)}
         className={styles.generalFormContainer}
       >
-        <Inputs register={register} errors={errors} />
+        <Inputs register={register} setValue={setValue} errors={errors} />
 
         <PurchaseDetails />
       </form>

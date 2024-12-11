@@ -1,5 +1,5 @@
 import { ComponentProps, useState } from "react";
-import { FieldErrors, UseFormRegister } from "react-hook-form";
+import { FieldErrors, UseFormRegister, UseFormSetValue } from "react-hook-form";
 import { FormCheckout } from "../../../schema/FormCheckout";
 import axios from "axios";
 import styles from "./Inputs.module.css";
@@ -7,17 +7,12 @@ import styles from "./Inputs.module.css";
 export type InputsType = ComponentProps<'input'> & ComponentProps<'span'> & {
   register: UseFormRegister<FormCheckout>;
   errors: FieldErrors<FormCheckout>;
+  setValue: UseFormSetValue<FormCheckout>;
 }
 
-export const Inputs = ({ register, errors }: InputsType) => {
+export const Inputs = ({ register, setValue, errors }: InputsType) => {
   const [zipCode, setZipCode] = useState<string>("");
-  const [addressData, setAddressData] = useState({
-    country: "",
-    street: "",
-    city: "",
-    province: ""
-  });
-
+  
   const searchZipCode = async (value: string) => {
     const zipCode = value.replace(/\D/g, "");
     if (zipCode.length === 8) {
@@ -32,12 +27,10 @@ export const Inputs = ({ register, errors }: InputsType) => {
         }
         
         const { regiao, logradouro, localidade, uf } = response.data;
-        setAddressData({
-          country: regiao,
-          street: logradouro,
-          city: localidade,
-          province: uf
-        });
+        setValue("country", regiao);
+        setValue("street", logradouro);
+        setValue("city", localidade);
+        setValue("province", uf);
       } catch (error) {
         console.error(`Error: ${error}`);
       }
@@ -109,9 +102,12 @@ export const Inputs = ({ register, errors }: InputsType) => {
             type="text"
             id="zipCode"
             {...register("zipCode")}
-            maxLength={9}
             value={zipCode}
-            onChange={(e) => setZipCode(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value;
+              setZipCode(value);
+              setValue("zipCode", value);
+            }}
             onBlur={() => searchZipCode(zipCode)}
             className={styles.input}
           />
@@ -132,10 +128,10 @@ export const Inputs = ({ register, errors }: InputsType) => {
             type="text"
             id="country"
             {...register("country")}
-            value={addressData.country}
-            onChange={(e) =>
-              setAddressData({ ...addressData, country: e.target.value })
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              setValue("country", value);
+            }}
             className={styles.input}
           />
 
@@ -155,10 +151,10 @@ export const Inputs = ({ register, errors }: InputsType) => {
             type="text"
             id="street"
             {...register("street")}
-            value={addressData.street}
-            onChange={(e) =>
-              setAddressData({ ...addressData, street: e.target.value })
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              setValue("street", value);
+            }}
             className={styles.input}
           />
           {errors.street && (
@@ -177,10 +173,10 @@ export const Inputs = ({ register, errors }: InputsType) => {
             type="text"
             id="city"
             {...register("city")}
-            value={addressData.city}
-            onChange={(e) =>
-              setAddressData({ ...addressData, city: e.target.value })
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              setValue("city", value);
+            }}
             className={styles.input}
           />
 
@@ -200,10 +196,10 @@ export const Inputs = ({ register, errors }: InputsType) => {
             type="text"
             id="province"
             {...register("province")}
-            value={addressData.province}
-            onChange={(e) =>
-              setAddressData({ ...addressData, province: e.target.value })
-            }
+            onChange={(e) => {
+              const value = e.target.value;
+              setValue("province", value);
+            }}
             className={styles.input}
           />
 
