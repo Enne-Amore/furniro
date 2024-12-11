@@ -20,10 +20,7 @@ export const ProductsSelected = ({
 
     setProducts(filteredProducts);
 
-    toast.success('Product successfully deleted from cart', {
-      position: "top-center",
-      autoClose: 1500
-    })
+    toast.success('Product successfully deleted from cart')
   };
 
   return (

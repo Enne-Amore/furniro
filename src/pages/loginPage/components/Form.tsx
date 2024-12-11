@@ -13,10 +13,7 @@ export const Form = () => {
       navigate('/shop');
     }, 1500)
 
-    toast.success('Login successful', {
-      position: "top-center",
-      autoClose: 1500
-    })
+    toast.success('Login successful')
   };
 
   return (

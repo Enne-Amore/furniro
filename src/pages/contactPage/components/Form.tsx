@@ -9,10 +9,7 @@ export const Form = () => {
   const { register, handleSubmit, errors } = useFormsContact();
 
   const onSubmit = (data: FormContact) => {
-    toast.success('Message sent successfully', {
-      position: "top-center",
-      autoClose: 1500
-    })
+    toast.success('Message sent successfully')
 
     setTimeout(() => {
       navigate("/");

@@ -11,10 +11,7 @@ export const GeneralForm = () => {
   const { register, setValue, handleSubmit, errors } = useFormsCheckout();
 
   const onSubmit = (data: FormCheckout) => {
-    toast.success('Message sent successfully', {
-      position: "top-center",
-      autoClose: 1500
-    })
+    toast.success('Message sent successfully')
 
     setTimeout(() => {
       navigate("/");
