@@ -3,6 +3,10 @@
 This is the third challenge of the Compass scholarship program, in which the objective is to develop an application called Furniro. The project consists of a furniture store.
 
 
+## Hosted Application Demo
+[Furniro - Website](https://main.d2hwjgjfr6ta1n.amplifyapp.com/)
+
+
 ## 🚀Technologies Used
 This project was developed with the following technologies and tools:
 
