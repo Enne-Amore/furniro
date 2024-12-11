@@ -22,6 +22,6 @@
     @apply flex items-center gap-8
 }
 
-.options span {
-    @apply text-3xl
+.options img {
+    @apply w-7 h-auto
 }
