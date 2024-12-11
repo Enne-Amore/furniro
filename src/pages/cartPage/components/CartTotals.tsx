@@ -3,35 +3,31 @@ import { ProductType } from "../../../types/ProductType";
 import { toast } from "react-toastify";
 import styles from "./CartTotals.module.css";
 
-export const CartTotals = ({
-  products
-}: {
-  products: ProductType[];
-}) => {
+export const CartTotals = ({ products }: { products: ProductType[] }) => {
   const navigate = useNavigate();
 
   const subtotal: number = products.reduce(
     (subtotal, product) => subtotal + Number(product.currentPrice),
     0
-  )
+  );
 
   const total: number = products.reduce(
-    (total, product) => total + Number(product.currentPrice) * Number(product.qtd),
+    (total, product) =>
+      total + Number(product.currentPrice) * Number(product.qtd),
     0
   );
 
   const handleCheckout = () => {
-    if(products.length > 0) {
-        toast.success(`Purchase in progress successfully`)
-        
-        setTimeout(() => {
-          navigate('/checkout')
-        }, 1500)
+    if (products.length > 0) {
+      toast.success(`Purchase in progress successfully`);
 
-      } else {
-        toast.error(`No purchases in the cart`)
-      }
-  }
+      setTimeout(() => {
+        navigate("/checkout");
+      }, 1500);
+    } else {
+      toast.error(`No purchases in the cart`);
+    }
+  };
 
   return (
     <div className={styles.container}>
