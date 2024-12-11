@@ -1,5 +1,9 @@
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
 .roomsContainer {
-    @apply bg-[#FCF8F3] flex items-center gap-10 py-10 pl-14
+    @apply bg-[#FCF8F3] flex items-center gap-10 py-10 pl-14 
 }
 
 .texts {
