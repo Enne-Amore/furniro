@@ -2,7 +2,7 @@
 
  This is the third challenge of the Compass scholarship program, in which the objective is to develop an application called Furniro. The project consists of a furniture store.
 
-## 📹 Preview
+## 🎞️ Preview
 
  <img src="src/assets/preview.gif" alt="website's preview" width="340" height="200">
 
@@ -17,15 +17,11 @@
  This project was developed with the following technologies and tools:
 
 
-### 🌐 Main Languages
+### 🛠️ Libraries, Frameworks and languages
 
  - **HTML:** Structuring the application pages and content;
  - **CSS**: Styling pages to define layout and appearance;
  - **TypeScript:** JavaScript superset that adds static typing for greater code safety and robustness;
-
-
-### 🛠️ Libraries, Frameworks and Tools
-
  - **React:** JavaScript library for building user interfaces, facilitating the development of reusable components;
  - **Tailwind CSS:** CSS framework that allows fast and responsive styling using utility classes.
  - **Axios:** HTTP client for making API requests;
