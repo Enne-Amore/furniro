@@ -9,34 +9,34 @@
 
 ## 🌐 Hosted Application Demo
 
- [Furniro - Website](https://main.d2hwjgjfr6ta1n.amplifyapp.com/)
+ [Click here to access the website](https://main.d2hwjgjfr6ta1n.amplifyapp.com/)
 
 
 ## 🚀 Technologies Used
 
  This project was developed with the following technologies and tools:
 
-### 🌐 Front-End
 
- * **HTML:** Structuring the application pages and content;
- * **CSS**: Styling pages to define layout and appearance;
- * **React:** JavaScript library for building user interfaces, facilitating the development of reusable components;
- * **TypeScript:** JavaScript superset that adds static typing for greater code safety and robustness;
- * **Tailwind CSS:** CSS framework that allows fast and responsive styling using utility classes.
+### 🌐 Main Languages
+
+ - **HTML:** Structuring the application pages and content;
+ - **CSS**: Styling pages to define layout and appearance;
+ - **TypeScript:** JavaScript superset that adds static typing for greater code safety and robustness;
 
 
-### 🛠️ Libraries and Tools
+### 🛠️ Libraries, Frameworks and Tools
 
- - **react:** Main library for creating user interfaces;
- - **axios:** HTTP client for making API requests;
- - **react-dom:** Library for integrating React with the DOM;
- - **react-icons:** Library for adding icons to React components;
- - **react-router-dom:** Library for managing routes in React (navigation between pages). Features such as login and registration.
+ - **React:** JavaScript library for building user interfaces, facilitating the development of reusable components;
+ - **Tailwind CSS:** CSS framework that allows fast and responsive styling using utility classes.
+ - **Axios:** HTTP client for making API requests;
+ - **React DOM:** Library for integrating React with the DOM;
+ - **React Icons:** Library for adding icons to React components;
+ - **React Router:** Library for managing routes in React (navigation between pages). Features such as login and registration.
 
 
 ### 🗄️ Simulated Back-End
 
- * **JSON Server:** REST API simulator that allows you to test the application backend using a JSON file to temporarily store data.
+ - **JSON Server:** REST API simulator that allows you to test the application backend using a JSON file to temporarily store data.
 
 
 ## ⚙️ Features
