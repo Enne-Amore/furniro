@@ -4,7 +4,7 @@
 
 ## 📹 Preview
 
- [Access video](https://third-challenge-furniro.s3.us-east-2.amazonaws.com/src/assets/demo-video-furniro.mp4)
+ <img src="src/assets/preview.gif" alt="website's preview" width="340" height="200">
 
 
 ## 🌐 Hosted Application Demo
