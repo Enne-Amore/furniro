@@ -9,7 +9,7 @@
 
 ## 🌐 Hosted Application Demo
 
- [Click here to access the website](https://main.d2hwjgjfr6ta1n.amplifyapp.com/)
+ [Click here to access the website](https://furniro-nu-kohl.vercel.app/)
 
 
 ## 🚀 Technologies Used
